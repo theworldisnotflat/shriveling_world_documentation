@@ -1,2 +1,2 @@
 # shriveling_world_documentation
-the documentation of the project "shriveling_world"
+the documentation and deployment of the project "shriveling_world"
