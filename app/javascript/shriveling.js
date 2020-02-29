@@ -63819,16 +63819,16 @@ vec4 envMapTexelToLinear(vec4 color) {
               let cone = {};
               let destinationsWithModes = {};
               let destCityCode;
-              let edge, alpha;
-              let edgeTranspModeName;
-              let edgeTranspModeSpeed;
-              if (city.edges.length === 0) {
-                  city.edges.push({ yearBegin: minYear, idDes: -Infinity, transportMode: roadCode });
+              let link, alpha;
+              let linkTranspModeName;
+              let linkTranspModeSpeed;
+              if (city.links.length === 0) {
+                  city.links.push({ yearBegin: minYear, idDes: -Infinity, transportMode: roadCode });
               }
-              for (let i = 0; i < city.edges.length; i++) {
-                  edge = city.edges[i];
-                  destCityCode = edge.idDes;
-                  edgeTranspModeSpeed = speedPerTransportPerYear[edge.transportMode];
+              for (let i = 0; i < city.links.length; i++) {
+                  link = city.links[i];
+                  destCityCode = link.idDes;
+                  linkTranspModeSpeed = speedPerTransportPerYear[link.transportMode];
                   if (!processedODs.hasOwnProperty(destCityCode)) {
                       processedODs[destCityCode] = {};
                   }
@@ -63838,52 +63838,52 @@ vec4 envMapTexelToLinear(vec4 color) {
                   }
                   if (lookupPosition.hasOwnProperty(destCityCode)) {
                       let { end, middle, theta, pointP, pointQ, clock } = cachedGetTheMiddle(origCityCode, destCityCode);
-                      minYear = Math.min(edge.yearBegin, minYear);
-                      maxYear = edge.yearEnd ? edge.yearEnd : maxYear;
-                      edgeTranspModeName = edgeTranspModeSpeed.name;
+                      minYear = Math.min(link.yearBegin, minYear);
+                      maxYear = link.yearEnd ? link.yearEnd : maxYear;
+                      linkTranspModeName = linkTranspModeSpeed.name;
                       if (!destinationsWithModes.hasOwnProperty(destCityCode)) {
                           destinationsWithModes[destCityCode] = {};
                       }
-                      if (!destinationsWithModes[destCityCode].hasOwnProperty(edgeTranspModeName)) {
-                          destinationsWithModes[destCityCode][edgeTranspModeName] = [];
+                      if (!destinationsWithModes[destCityCode].hasOwnProperty(linkTranspModeName)) {
+                          destinationsWithModes[destCityCode][linkTranspModeName] = [];
                       }
-                      let edgeModeSpeed = edgeTranspModeSpeed.tabYearSpeed;
-                      let edgeToBeProcessed = processedODs[origCityCode][destCityCode].indexOf(edgeTranspModeName) === -1;
-                      processedODs[origCityCode][destCityCode].push(edgeTranspModeName);
-                      processedODs[destCityCode][origCityCode].push(edgeTranspModeName);
+                      let edgeModeSpeed = linkTranspModeSpeed.tabYearSpeed;
+                      let linkToBeProcessed = processedODs[origCityCode][destCityCode].indexOf(linkTranspModeName) === -1;
+                      processedODs[origCityCode][destCityCode].push(linkTranspModeName);
+                      processedODs[destCityCode][origCityCode].push(linkTranspModeName);
                       for (let year = minYear; year <= maxYear; year++) {
-                          if (edgeTranspModeSpeed.terrestrial === true) {
+                          if (linkTranspModeSpeed.terrestrial === true) {
                               if (!cone.hasOwnProperty(year)) {
                                   let coneAlpha = speedPerTransportPerYear[roadCode].tabYearSpeed[year].alpha;
                                   cone[year] = { coneAlpha: coneAlpha, tab: [] };
                               }
-                              alpha = edgeTranspModeSpeed.tabYearSpeed[year].alpha;
+                              alpha = linkTranspModeSpeed.tabYearSpeed[year].alpha;
                               cone[year].tab.push({ alpha, clock });
-                              destinationsWithModes[destCityCode][edgeTranspModeName].push({ year: year, speed: edgeModeSpeed[year].speed });
-                              if (edgeToBeProcessed === true) {
-                                  let modelledSpeed = getModelledSpeed(theta, maximumSpeed[year], edgeModeSpeed[year].speed, edgeTranspModeSpeed.terrestrial);
+                              destinationsWithModes[destCityCode][linkTranspModeName].push({ year: year, speed: edgeModeSpeed[year].speed });
+                              if (linkToBeProcessed === true) {
+                                  let modelledSpeed = getModelledSpeed(theta, maximumSpeed[year], edgeModeSpeed[year].speed, linkTranspModeSpeed.terrestrial);
                                   let speedRatio = maximumSpeed[year] * theta / (2 * modelledSpeed);
                                   if (!listOfEdges.hasOwnProperty(destCityCode)) {
                                       listOfEdges[destCityCode] = { end, middle, pointP, pointQ, theta, speedRatio: {} };
                                   }
-                                  if (!listOfEdges[destCityCode].speedRatio.hasOwnProperty(edgeTranspModeName)) {
-                                      listOfEdges[destCityCode].speedRatio[edgeTranspModeName] = {};
+                                  if (!listOfEdges[destCityCode].speedRatio.hasOwnProperty(linkTranspModeName)) {
+                                      listOfEdges[destCityCode].speedRatio[linkTranspModeName] = {};
                                   }
-                                  listOfEdges[destCityCode].speedRatio[edgeTranspModeName][year] = speedRatio;
+                                  listOfEdges[destCityCode].speedRatio[linkTranspModeName][year] = speedRatio;
                               }
                           }
                           else {
-                              if (edgeToBeProcessed === true) {
-                                  let modelledSpeed = getModelledSpeed(theta, maximumSpeed[year], edgeModeSpeed[year].speed, edgeTranspModeSpeed.terrestrial);
+                              if (linkToBeProcessed === true) {
+                                  let modelledSpeed = getModelledSpeed(theta, maximumSpeed[year], edgeModeSpeed[year].speed, linkTranspModeSpeed.terrestrial);
                                   let speedRatio = maximumSpeed[year] * theta / (2 * modelledSpeed);
                                   debugger;
                                   if (!listOfEdges.hasOwnProperty(destCityCode)) {
                                       listOfEdges[destCityCode] = { end, middle, pointP, pointQ, theta, speedRatio: {} };
                                   }
-                                  if (!listOfEdges[destCityCode].speedRatio.hasOwnProperty(edgeTranspModeName)) {
-                                      listOfEdges[destCityCode].speedRatio[edgeTranspModeName] = {};
+                                  if (!listOfEdges[destCityCode].speedRatio.hasOwnProperty(linkTranspModeName)) {
+                                      listOfEdges[destCityCode].speedRatio[linkTranspModeName] = {};
                                   }
-                                  listOfEdges[destCityCode].speedRatio[edgeTranspModeName][year] = speedRatio;
+                                  listOfEdges[destCityCode].speedRatio[linkTranspModeName][year] = speedRatio;
                               }
                           }
                       }
