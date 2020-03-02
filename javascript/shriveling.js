@@ -60067,7 +60067,7 @@ vec4 envMapTexelToLinear(vec4 color) {
                   that._renderer.render(that._scene, that._camera);
               });
           });
-          LineMeshShader.generateCones(lookup.edgesData).then((lines) => {
+          LineMeshShader.generateCones(lookup.linksData).then((lines) => {
               lines.forEach((line) => {
                   that.lineCollection.push(line);
                   line.visible = that._show;
@@ -63693,7 +63693,7 @@ vec4 envMapTexelToLinear(vec4 color) {
   }
   function networkFromCities(transportModeCode, cities, transpNetwork) {
       let network = {};
-      let edgesData = {};
+      let linksData = {};
       let actualYear = (new Date()).getFullYear();
       let minYear = actualYear, maxYear = 0;
       transpNetwork.forEach((item) => {
@@ -63847,7 +63847,7 @@ vec4 envMapTexelToLinear(vec4 color) {
                       if (!destinationsWithModes[destCityCode].hasOwnProperty(linkTranspModeName)) {
                           destinationsWithModes[destCityCode][linkTranspModeName] = [];
                       }
-                      let edgeModeSpeed = linkTranspModeSpeed.tabYearSpeed;
+                      let LinkModeSpeed = linkTranspModeSpeed.tabYearSpeed;
                       let linkToBeProcessed = processedODs[origCityCode][destCityCode].indexOf(linkTranspModeName) === -1;
                       processedODs[origCityCode][destCityCode].push(linkTranspModeName);
                       processedODs[destCityCode][origCityCode].push(linkTranspModeName);
@@ -63859,9 +63859,9 @@ vec4 envMapTexelToLinear(vec4 color) {
                               }
                               alpha = linkTranspModeSpeed.tabYearSpeed[year].alpha;
                               cone[year].tab.push({ alpha, clock });
-                              destinationsWithModes[destCityCode][linkTranspModeName].push({ year: year, speed: edgeModeSpeed[year].speed });
+                              destinationsWithModes[destCityCode][linkTranspModeName].push({ year: year, speed: LinkModeSpeed[year].speed });
                               if (linkToBeProcessed === true) {
-                                  let modelledSpeed = getModelledSpeed(theta, maximumSpeed[year], edgeModeSpeed[year].speed, linkTranspModeSpeed.terrestrial);
+                                  let modelledSpeed = getModelledSpeed(theta, maximumSpeed[year], LinkModeSpeed[year].speed, linkTranspModeSpeed.terrestrial);
                                   let speedRatio = maximumSpeed[year] * theta / (2 * modelledSpeed);
                                   if (!listOfEdges.hasOwnProperty(destCityCode)) {
                                       listOfEdges[destCityCode] = { end, middle, pointP, pointQ, theta, speedRatio: {} };
@@ -63874,7 +63874,7 @@ vec4 envMapTexelToLinear(vec4 color) {
                           }
                           else {
                               if (linkToBeProcessed === true) {
-                                  let modelledSpeed = getModelledSpeed(theta, maximumSpeed[year], edgeModeSpeed[year].speed, linkTranspModeSpeed.terrestrial);
+                                  let modelledSpeed = getModelledSpeed(theta, maximumSpeed[year], LinkModeSpeed[year].speed, linkTranspModeSpeed.terrestrial);
                                   let speedRatio = maximumSpeed[year] * theta / (2 * modelledSpeed);
                                   debugger;
                                   if (!listOfEdges.hasOwnProperty(destCityCode)) {
@@ -63902,11 +63902,11 @@ vec4 envMapTexelToLinear(vec4 color) {
               }
               network[origCityCode] = { referential, cone: cone, destinationsWithModes: destinationsWithModes, origCityProperties: city };
               if (Object.keys(listOfEdges).length > 0) {
-                  edgesData[origCityCode] = { begin: startPoint, list: listOfEdges };
+                  linksData[origCityCode] = { begin: startPoint, list: listOfEdges };
               }
           }
       });
-      return { lookupCityNetwork: network, edgesData: edgesData };
+      return { lookupCityNetwork: network, linksData: linksData };
   }
   class Merger {
       constructor() {
@@ -63916,18 +63916,18 @@ vec4 envMapTexelToLinear(vec4 color) {
           this._transportModeCode = [];
           this._transportNetwork = [];
           this._state = 'missing';
-          this._edgesAndTranspModes = {};
+          this._linksAndTranspModes = {};
       }
       get state() {
           return this._state;
       }
-      get edgesWithTranspModes() {
-          return this._edgesAndTranspModes;
+      get linksWithTranspModes() {
+          return this._linksAndTranspModes;
       }
       get Cities() { return this._cities; }
       CitiesByIndex(index) { return this._cities[index]; }
       get conesAndEdgesData() {
-          return this._edgesAndTranspModes;
+          return this._linksAndTranspModes;
       }
       get minYear() { return _minYear; }
       get maxYear() { return _maxYear; }
@@ -63938,7 +63938,7 @@ vec4 envMapTexelToLinear(vec4 color) {
           this._transportModeSpeed = [];
           this._transportModeCode = [];
           this._transportNetwork = [];
-          this._edgesAndTranspModes = {};
+          this._linksAndTranspModes = {};
           this._state = 'missing';
       }
       add(someString) {
@@ -63984,8 +63984,8 @@ vec4 envMapTexelToLinear(vec4 color) {
               merger(transportModeCode, transportModeSpeed, 'code', 'transportModeCode', 'speeds', true, true, false);
               merger(cities, population, 'cityCode', 'cityCode', 'populations', false, true, false);
               merger(transportNetwork, cities, 'idDes', 'cityCode', 'destCityInfo', false, false, false);
-              merger(cities, transportNetwork, 'cityCode', 'idOri', 'edges', true, true, false);
-              this._edgesAndTranspModes = networkFromCities(transportModeCode, cities, transportNetwork);
+              merger(cities, transportNetwork, 'cityCode', 'idOri', 'links', true, true, false);
+              this._linksAndTranspModes = networkFromCities(transportModeCode, cities, transportNetwork);
               this._state = 'missing';
               this._checkState();
           }
@@ -63997,7 +63997,7 @@ vec4 envMapTexelToLinear(vec4 color) {
                   this._transportModeSpeed.length > 0 && this._transportModeCode.length > 0 &&
                   this._transportNetwork.length > 0) {
                   state = 'ready';
-                  if (Object.keys(this._edgesAndTranspModes).length > 0) {
+                  if (Object.keys(this._linksAndTranspModes).length > 0) {
                       state = 'complete';
                   }
               }
@@ -66993,12 +66993,12 @@ vec4 envMapTexelToLinear(vec4 color) {
           }
           for (var j = 0; j < this.getMergerI.Cities.length / 2; j++) {
               var obj = JSON.parse(JSON.stringify(this.getMergerI.Cities[j]));
-              var pop = JSON.parse(JSON.stringify(this._merger.edgesWithTranspModes.lookupCityNetwork[this.getMergerI.Cities[j].cityCode].origCityProperties.populations));
+              var pop = JSON.parse(JSON.stringify(this._merger.linksWithTranspModes.lookupCityNetwork[this.getMergerI.Cities[j].cityCode].origCityProperties.populations));
               var population = pop.pop2020;
               if (population > this._populations) {
                   var geometry = new TextGeometry(obj.urbanAgglomeration, CONFIGURATION.TEXT_GEOMETRY_OPTIONS);
                   mesh = new Mesh(geometry, CONFIGURATION.BASIC_TEXT_MATERIAL);
-                  let cart = this._merger.edgesWithTranspModes.lookupCityNetwork[this.getMergerI.Cities[j].cityCode].referential.cartoRef;
+                  let cart = this._merger.linksWithTranspModes.lookupCityNetwork[this.getMergerI.Cities[j].cityCode].referential.cartoRef;
                   let x = -CONFIGURATION.THREE_EARTH_RADIUS *
                       1.1 *
                       Math.cos(cart.latitude * 0.95) *
