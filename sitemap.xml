@@ -4,347 +4,347 @@
   
   <url>
     <loc>/tags/documentation/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/classes/_bigboard_bigboard_.bigboard/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/classes/_bigboard_datasetmanager_.datasetmanager/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/classes/_bigboard_guidat_.gui/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/classes/_bigboard_merger_.merger/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/classes/_common_gpucomputer_.gpucomputer/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/classes/_common_gpucomputer_.offscreencanvas/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/classes/_common_referential_.coordinate/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/classes/_common_referential_.nedlocal/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/classes/_common_utils_.cartographic/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/classes/_cone_base_.pseudocone/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/classes/_cone_coneboard_.coneboard/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/classes/_cone_conemeshshader_.conemeshshader/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/classes/_cone_linemeshshaders_.linemeshshader/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/classes/_country_countryboard_.countryboard/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/classes/_country_countrymeshshader_.countrymeshshader/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/enums/_definitions_project_.projection_enum/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_common_configuration_.ieventlistitem/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_cone_conemeshshader_.ishaderalpha/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_country_countrymeshshader_.ipregeometry/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_country_countrymeshshader_.ipremesh/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.ibbox/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.icartographic/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.icity/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.icityextremityofedge/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.icitynetwork/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.icomplexalphaitem/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.icountrytextureurl/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.icriterias/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.iedge/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.iitemcriteria/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.ilistfile/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.ilookupcitynetwork/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.ilookupcomplexalpha/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.ilookupdestwithmodes/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.ilookupedgelist/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.ilookupedges/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.ilookupedgesandcitynetwork/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.ilookupedgesfromcity/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.ilookuptranspmodespeed/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.imarklimits/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.inedlocalglsl/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.iorderascendant/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.ipopulation/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.ipseudogeometry/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.isumupcriteria/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.isumupcriteriaitem/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.itranspmode/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/interfaces/_definitions_project_.itransportmodespeed/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_bigboard_bigboard_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_bigboard_datasetmanager_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_bigboard_guidat_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_bigboard_initthree_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_bigboard_merger_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_common_configuration_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_common_gpucomputer_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_common_referential_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_common_utils_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_cone_base_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_cone_coneboard_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_cone_conemeshshader_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_cone_linemeshshaders_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_country_countryboard_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_country_countrymeshshader_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_definitions_project_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/modules/_shaders_/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/readme/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/documentation/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-03-10T08:54:14+00:00</lastmod>
+    <lastmod>2020-03-10T09:24:53+00:00</lastmod>
   </url>
   
   <url>
