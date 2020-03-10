@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Shriveling world</title>
-    <link>/tags/</link>
+    <link>https://theworldisnotflat.github.io/shriveling_world_documentation/tags/</link>
     <description>Recent content in Tags on Shriveling world</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Tue, 10 Mar 2020 15:03:49 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2020 20:29:45 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://theworldisnotflat.github.io/shriveling_world_documentation/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>documentation</title>
-      <link>/tags/documentation/</link>
-      <pubDate>Tue, 10 Mar 2020 15:03:49 +0000</pubDate>
+      <link>https://theworldisnotflat.github.io/shriveling_world_documentation/tags/documentation/</link>
+      <pubDate>Tue, 10 Mar 2020 20:29:45 +0000</pubDate>
       
-      <guid>/tags/documentation/</guid>
+      <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/tags/documentation/</guid>
       <description></description>
     </item>
     
