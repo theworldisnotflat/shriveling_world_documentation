@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>documentation - Shriveling world</title>
+<meta name="generator" content="Hugo 0.67.1" />
+<link href="https://theworldisnotflat.github.io/shriveling_world_documentation//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/">
+<link rel="stylesheet" href="https://theworldisnotflat.github.io/shriveling_world_documentation/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://theworldisnotflat.github.io/shriveling_world_documentation/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://theworldisnotflat.github.io/shriveling_world_documentation/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="documentation" />
+<meta property="og:description" content="shriveling the world documentation › &ldquo;src/bigBoard/merger&rdquo;
+Module: &ldquo;src/bigBoard/merger&rdquo; Index Classes  Merger  Variables  _maxYear _minYear keyWords thetaLimit  Functions  getCSV getModelledSpeed getTheMiddle merger networkFromCities  Object literals  _transportName config  Variables Let _maxYear • _maxYear: number = 1900
+Defined in src/bigBoard/merger.ts:126
+ Let _minYear • _minYear: number = 2000
+Defined in src/bigBoard/merger.ts:125
+ Const keyWords • keyWords: Array‹object› = [ {name: &lsquo;_cities&rsquo;, words: [&lsquo;cityCode&rsquo;, &lsquo;latitude&rsquo;, &lsquo;longitude&rsquo;, &lsquo;radius&rsquo;]}, {name: &lsquo;_transportModeSpeed&rsquo;, words: [&lsquo;transportModeCode&rsquo;, &lsquo;year&rsquo;, &lsquo;speedKPH&rsquo;]}, {name: &lsquo;_transportModeCode&rsquo;, words: [&lsquo;code&rsquo;, &lsquo;name&rsquo;, &lsquo;yearBegin&rsquo;, &lsquo;terrestrial&rsquo;]}, {name: &lsquo;_transportNetwork&rsquo;, words: [&lsquo;transportMode&rsquo;, &lsquo;idDes&rsquo;, &lsquo;idOri&rsquo;]}, {name: &lsquo;_populations&rsquo;, words: [&lsquo;cityCode&rsquo;]}, ]" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/" />
+<meta property="article:published_time" content="2020-07-10T15:00:09+00:00" />
+<meta property="article:modified_time" content="2020-07-10T15:00:09+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="documentation"/>
+<meta name="twitter:description" content="shriveling the world documentation › &ldquo;src/bigBoard/merger&rdquo;
+Module: &ldquo;src/bigBoard/merger&rdquo; Index Classes  Merger  Variables  _maxYear _minYear keyWords thetaLimit  Functions  getCSV getModelledSpeed getTheMiddle merger networkFromCities  Object literals  _transportName config  Variables Let _maxYear • _maxYear: number = 1900
+Defined in src/bigBoard/merger.ts:126
+ Let _minYear • _minYear: number = 2000
+Defined in src/bigBoard/merger.ts:125
+ Const keyWords • keyWords: Array‹object› = [ {name: &lsquo;_cities&rsquo;, words: [&lsquo;cityCode&rsquo;, &lsquo;latitude&rsquo;, &lsquo;longitude&rsquo;, &lsquo;radius&rsquo;]}, {name: &lsquo;_transportModeSpeed&rsquo;, words: [&lsquo;transportModeCode&rsquo;, &lsquo;year&rsquo;, &lsquo;speedKPH&rsquo;]}, {name: &lsquo;_transportModeCode&rsquo;, words: [&lsquo;code&rsquo;, &lsquo;name&rsquo;, &lsquo;yearBegin&rsquo;, &lsquo;terrestrial&rsquo;]}, {name: &lsquo;_transportNetwork&rsquo;, words: [&lsquo;transportMode&rsquo;, &lsquo;idDes&rsquo;, &lsquo;idOri&rsquo;]}, {name: &lsquo;_populations&rsquo;, words: [&lsquo;cityCode&rsquo;]}, ]"/>
+<meta itemprop="name" content="documentation">
+<meta itemprop="description" content="shriveling the world documentation › &ldquo;src/bigBoard/merger&rdquo;
+Module: &ldquo;src/bigBoard/merger&rdquo; Index Classes  Merger  Variables  _maxYear _minYear keyWords thetaLimit  Functions  getCSV getModelledSpeed getTheMiddle merger networkFromCities  Object literals  _transportName config  Variables Let _maxYear • _maxYear: number = 1900
+Defined in src/bigBoard/merger.ts:126
+ Let _minYear • _minYear: number = 2000
+Defined in src/bigBoard/merger.ts:125
+ Const keyWords • keyWords: Array‹object› = [ {name: &lsquo;_cities&rsquo;, words: [&lsquo;cityCode&rsquo;, &lsquo;latitude&rsquo;, &lsquo;longitude&rsquo;, &lsquo;radius&rsquo;]}, {name: &lsquo;_transportModeSpeed&rsquo;, words: [&lsquo;transportModeCode&rsquo;, &lsquo;year&rsquo;, &lsquo;speedKPH&rsquo;]}, {name: &lsquo;_transportModeCode&rsquo;, words: [&lsquo;code&rsquo;, &lsquo;name&rsquo;, &lsquo;yearBegin&rsquo;, &lsquo;terrestrial&rsquo;]}, {name: &lsquo;_transportNetwork&rsquo;, words: [&lsquo;transportMode&rsquo;, &lsquo;idDes&rsquo;, &lsquo;idOri&rsquo;]}, {name: &lsquo;_populations&rsquo;, words: [&lsquo;cityCode&rsquo;]}, ]">
+<meta itemprop="datePublished" content="2020-07-10T15:00:09&#43;00:00" />
+<meta itemprop="dateModified" content="2020-07-10T15:00:09&#43;00:00" />
+<meta itemprop="wordCount" content="699">
+
+
+
+<meta itemprop="keywords" content="documentation," /></head>
+<body><div class="container"><header>
+<h1>Shriveling world</h1>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="../../../shriveling_world_documentation/">User documentation</a></li>
+<li><a href="documentation/">Developper documentation</a></li>
+<li><a href="app/">Application</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>documentation</h1>
+<p><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/readme/">shriveling the world documentation</a> › <a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/">&ldquo;src/bigBoard/merger&rdquo;</a></p>
+<h1 id="module-srcbigboardmerger">Module: &ldquo;src/bigBoard/merger&rdquo;</h1>
+<h2 id="index">Index</h2>
+<h3 id="classes">Classes</h3>
+<ul>
+<li><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_bigboard_merger_.merger/">Merger</a></li>
+</ul>
+<h3 id="variables">Variables</h3>
+<ul>
+<li><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/#let-_maxyear">_maxYear</a></li>
+<li><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/#let-_minyear">_minYear</a></li>
+<li><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/#const-keywords">keyWords</a></li>
+<li><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/#const-thetalimit">thetaLimit</a></li>
+</ul>
+<h3 id="functions">Functions</h3>
+<ul>
+<li><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/#getcsv">getCSV</a></li>
+<li><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/#getmodelledspeed">getModelledSpeed</a></li>
+<li><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/#getthemiddle">getTheMiddle</a></li>
+<li><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/#merger">merger</a></li>
+<li><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/#networkfromcities">networkFromCities</a></li>
+</ul>
+<h3 id="object-literals">Object literals</h3>
+<ul>
+<li><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/#let-_transportname">_transportName</a></li>
+<li><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/#const-config">config</a></li>
+</ul>
+<h2 id="variables-1">Variables</h2>
+<h3 id="let-_maxyear"><code>Let</code> _maxYear</h3>
+<p>• <strong>_maxYear</strong>: <em>number</em> = 1900</p>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L126">src/bigBoard/merger.ts:126</a></em></p>
+<hr>
+<h3 id="let-_minyear"><code>Let</code> _minYear</h3>
+<p>• <strong>_minYear</strong>: <em>number</em> = 2000</p>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L125">src/bigBoard/merger.ts:125</a></em></p>
+<hr>
+<h3 id="const-keywords"><code>Const</code> keyWords</h3>
+<p>• <strong>keyWords</strong>: <em>Array‹object›</em> = [
+{name: &lsquo;_cities&rsquo;, words: [&lsquo;cityCode&rsquo;, &lsquo;latitude&rsquo;, &lsquo;longitude&rsquo;, &lsquo;radius&rsquo;]},
+{name: &lsquo;_transportModeSpeed&rsquo;, words: [&lsquo;transportModeCode&rsquo;, &lsquo;year&rsquo;, &lsquo;speedKPH&rsquo;]},
+{name: &lsquo;_transportModeCode&rsquo;, words: [&lsquo;code&rsquo;, &lsquo;name&rsquo;, &lsquo;yearBegin&rsquo;, &lsquo;terrestrial&rsquo;]},
+{name: &lsquo;_transportNetwork&rsquo;, words: [&lsquo;transportMode&rsquo;, &lsquo;idDes&rsquo;, &lsquo;idOri&rsquo;]},
+{name: &lsquo;_populations&rsquo;, words: [&lsquo;cityCode&rsquo;]},
+]</p>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L110">src/bigBoard/merger.ts:110</a></em></p>
+<p>Used for parsing data files with columns</p>
+<hr>
+<h3 id="const-thetalimit"><code>Const</code> thetaLimit</h3>
+<p>• <strong>thetaLimit</strong>: <em>number</em> = 2000 / (CONFIGURATION.earthRadiusMeters / 1000)</p>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L124">src/bigBoard/merger.ts:124</a></em></p>
+<p>&ldquo;thetaLimit&rdquo; = threshold angle of the modelled air services speed.
+The threshold length is fixed at 2000 km for the current (2010) air system</p>
+<ul>
+<li>beyond &ldquo;thetaLimit&rdquo; speed has the constant value &ldquo;speed&rdquo;</li>
+<li>below &ldquo;thetaLimit&rdquo; speed decreases from value &ldquo;speed&rdquo; to zero depending on the value of &ldquo;theta&rdquo;</li>
+</ul>
+<h2 id="functions-1">Functions</h2>
+<h3 id="getcsv">getCSV</h3>
+<p>▸ <strong>getCSV</strong>(<code>text</code>: string, <code>isTransportModeCode</code>: boolean): <em>any</em></p>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L143">src/bigBoard/merger.ts:143</a></em></p>
+<p>Gets the CSV file, parses it,
+and returns a table</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>text</code></td>
+<td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>isTransportModeCode</code></td>
+<td>boolean</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>any</em></p>
+<hr>
+<h3 id="getmodelledspeed">getModelledSpeed</h3>
+<p>▸ <strong>getModelledSpeed</strong>(<code>theta</code>: number, <code>speedMax</code>: number, <code>speed</code>: number, <code>terrestrial</code>: boolean): <em>number</em></p>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L204">src/bigBoard/merger.ts:204</a></em></p>
+<p><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/#getmodelledspeed">getModelledSpeed</a> computes a new speed for aerial links
+having a length less than <a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/#const-thetalimit">thetaLimit</a>
+this modelled speed will be lower than the considered mode speed</p>
+<p><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupedgelist/#theta">theta</a> is the angle between the two cities
+in the unprojected situation</p>
+<p>In the case of air links, two equations are used to determine
+the <a href="http://bit.ly/2H4FOKw">heigth of aerial links above the geodesic</a>:</p>
+<ul>
+<li>below the threshold limit:<img src="http://bit.ly/2Xu3kGF" alt="below"></li>
+<li>beyond the threshold limit: <img src="http://bit.ly/2EejFpW" alt="beyond"></li>
+<li>the figure: <img src="http://bit.ly/2H4FOKw" alt="2">
+The threshold is taken at 2000 km, based on <img src="http://bit.ly/2OiEFC4" alt="an analysis ofcurrent (2010) OD pairs of flight "></li>
+</ul>
+<p><a href="https://timespace.hypotheses.org/121">More detailed explanations here</a></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>theta</code></td>
+<td>number</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>speedMax</code></td>
+<td>number</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>speed</code></td>
+<td>number</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>terrestrial</code></td>
+<td>boolean</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>number</em></p>
+<hr>
+<h3 id="getthemiddle">getTheMiddle</h3>
+<p>▸ <strong>getTheMiddle</strong>(<code>posA</code>: <a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_utils_.cartographic/">Cartographic</a>, <code>posB</code>: <a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_utils_.cartographic/">Cartographic</a>): <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L166">src/bigBoard/merger.ts:166</a></em></p>
+<p>Gets the middle between two Cartographic positions :
+[[posA]] and [[posB]]</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>posA</code></td>
+<td><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_utils_.cartographic/">Cartographic</a></td>
+</tr>
+<tr>
+<td><code>posB</code></td>
+<td><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_utils_.cartographic/">Cartographic</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>object</em></p>
+<ul>
+<li>
+<p><strong>middle</strong>: <em><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_utils_.cartographic/">Cartographic</a></em></p>
+</li>
+<li>
+<p><strong>theta</strong>: <em>number</em></p>
+</li>
+</ul>
+<hr>
+<h3 id="merger">merger</h3>
+<p>▸ <strong>merger</strong>‹<strong>U</strong>, <strong>V</strong>›(<code>mother</code>: U[], <code>girl</code>: V[], <code>motherProperty</code>: string, <code>girlProperty</code>: string, <code>newName</code>: string, <code>forceArray</code>: boolean, <code>girlPropertyToRemove</code>: boolean, <code>motherPropertyToRemove</code>: boolean): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L50">src/bigBoard/merger.ts:50</a></em></p>
+<p>Assure le croisement de deux tableaux d&rsquo;objet sur un attribut. La clé de croisement
+est renommée. À la fin de la procédure, le tableau receptacle est enrichi.</p>
+<p>realises the merge of two tables base on an attribute. The key for the merge is renamed.
+At the end of the process the recipient table is enriched.</p>
+<p><strong>Type parameters:</strong></p>
+<p>▪ <strong>U</strong></p>
+<p>▪ <strong>V</strong></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mother</code></td>
+<td>U[]</td>
+<td>le tableau d&rsquo;objet receptacle du croisement/the recipient table</td>
+</tr>
+<tr>
+<td><code>girl</code></td>
+<td>V[]</td>
+<td>le tableau qui complète le tableau précédent/where additional data lies</td>
+</tr>
+<tr>
+<td><code>motherProperty</code></td>
+<td>string</td>
+<td>l&rsquo;attribut du tableau mother sur lequel le croisement se fera/the property of the merge</td>
+</tr>
+<tr>
+<td><code>girlProperty</code></td>
+<td>string</td>
+<td>l&rsquo;attribut du tableau girl sur lequel le croisement se fera/the property of the merge</td>
+</tr>
+<tr>
+<td><code>newName</code></td>
+<td>string</td>
+<td>le nom de l&rsquo;attribut issu du croisement dans le tableau mother/</td>
+</tr>
+<tr>
+<td><code>forceArray</code></td>
+<td>boolean</td>
+<td>force l&rsquo;attribut synthétique à être un tableau</td>
+</tr>
+<tr>
+<td><code>girlPropertyToRemove</code></td>
+<td>boolean</td>
+<td>indique si on doit retirer la propriété dans le tableau girl</td>
+</tr>
+<tr>
+<td><code>motherPropertyToRemove</code></td>
+<td>boolean</td>
+<td>indique si on doit retirer la propriété dans le tableau girl</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>void</em></p>
+<hr>
+<h3 id="networkfromcities">networkFromCities</h3>
+<p>▸ <strong>networkFromCities</strong>(<code>transportModeCode</code>: <a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.itranspmode/">ITranspMode</a>[], <code>cities</code>: <a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icity/">ICity</a>[], <code>transpNetwork</code>: <a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.iedge/">IEdge</a>[]): <em><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupedgesandcitynetwork/">ILookupEdgesAndCityNetwork</a></em></p>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L241">src/bigBoard/merger.ts:241</a></em></p>
+<p><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/#networkfromcities">networkFromCities</a> is the main function of the project</p>
+<p>function <a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/#networkfromcities">networkFromCities</a> explores the [[transportNetwork]]
+around each city in order to</p>
+<ul>
+<li>determine the geometry of cones ([[cities]])</li>
+<li>and to draw lines</li>
+</ul>
+<p>First part of the function is putting in cache all the computations
+needed from each city, and especially  the <a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icitynetwork/#referential">referential</a></p>
+<p>Second part of the function explores the transport network from each city</p>
+<p><img src="http://bit.ly/2tLfehC" alt="equation 1"> equation 1 is on lines 354 and 404</p>
+<p><img src="http://bit.ly/2HhgxNg" alt="figure 1"></p>
+<p>More about the <a href="https://timespace.hypotheses.org/121">geometry of cones</a></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>transportModeCode</code></td>
+<td><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.itranspmode/">ITranspMode</a>[]</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>cities</code></td>
+<td><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icity/">ICity</a>[]</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>transpNetwork</code></td>
+<td><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.iedge/">IEdge</a>[]</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupedgesandcitynetwork/">ILookupEdgesAndCityNetwork</a></em></p>
+<h2 id="object-literals-1">Object literals</h2>
+<h3 id="let-_transportname"><code>Let</code> _transportName</h3>
+<h3 id="-_transportname-object">▪ <strong>_transportName</strong>: <em>object</em></h3>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L127">src/bigBoard/merger.ts:127</a></em></p>
+<h3 id="cones">cones</h3>
+<p>• <strong>cones</strong>: <em>undefined[]</em> = []</p>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L127">src/bigBoard/merger.ts:127</a></em></p>
+<h3 id="lines">lines</h3>
+<p>• <strong>lines</strong>: <em>undefined[]</em> = []</p>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L127">src/bigBoard/merger.ts:127</a></em></p>
+<hr>
+<h3 id="const-config"><code>Const</code> config</h3>
+<h3 id="-config-object">▪ <strong>config</strong>: <em>object</em></h3>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L128">src/bigBoard/merger.ts:128</a></em></p>
+<h3 id="dynamictyping">dynamicTyping</h3>
+<p>• <strong>dynamicTyping</strong>: <em>true</em> = true</p>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L130">src/bigBoard/merger.ts:130</a></em></p>
+<h3 id="fastmode">fastMode</h3>
+<p>• <strong>fastMode</strong>: <em>true</em> = true</p>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L132">src/bigBoard/merger.ts:132</a></em></p>
+<h3 id="header">header</h3>
+<p>• <strong>header</strong>: <em>true</em> = true</p>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L129">src/bigBoard/merger.ts:129</a></em></p>
+<h3 id="skipemptylines">skipEmptyLines</h3>
+<p>• <strong>skipEmptyLines</strong>: <em>true</em> = true</p>
+<p><em>Defined in <a href="https://github.com/theworldisnotflat/shriveling_world/blob/1b1d6fa/src/bigBoard/merger.ts#L131">src/bigBoard/merger.ts:131</a></em></p>
+<div class="edit-meta">
+Last updated on 10 Jul 2020
+
+
+<br>
+Published on 10 Jul 2020
+<br></div><nav class="pagination"><a class="nav nav-prev" href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_initthree_/" title="documentation"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - documentation</a>
+<a class="nav nav-next" href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_common_configuration_/" title="documentation">Next - documentation <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>
