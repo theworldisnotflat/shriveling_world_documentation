@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>User instructions - Shriveling world</title>
+<meta name="generator" content="Hugo 0.67.1" />
+<link href="https://theworldisnotflat.github.io/shriveling_world_documentation//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://theworldisnotflat.github.io/shriveling_world_documentation/users/">
+<link rel="stylesheet" href="https://theworldisnotflat.github.io/shriveling_world_documentation/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://theworldisnotflat.github.io/shriveling_world_documentation/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://theworldisnotflat.github.io/shriveling_world_documentation/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="User instructions" />
+<meta property="og:description" content="First steps Step #1:The app runs in a browser from this adress:
+Shriveling world
+Step #2: Once the app runs in the browser data is read in two ways:
+a. Cick on predefined dataset list on the left side of the broser window b. Introduce data in the app by grag&rsquo;n&rsquo;drop (see below)
+Attention: in any case data processing may take time, depending on the number of cities. So once data is introduced, just wait." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://theworldisnotflat.github.io/shriveling_world_documentation/users/" />
+<meta property="article:published_time" content="2020-03-19T06:59:00+01:00" />
+<meta property="article:modified_time" content="2020-03-19T06:59:00+01:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="User instructions"/>
+<meta name="twitter:description" content="First steps Step #1:The app runs in a browser from this adress:
+Shriveling world
+Step #2: Once the app runs in the browser data is read in two ways:
+a. Cick on predefined dataset list on the left side of the broser window b. Introduce data in the app by grag&rsquo;n&rsquo;drop (see below)
+Attention: in any case data processing may take time, depending on the number of cities. So once data is introduced, just wait."/>
+<meta itemprop="name" content="User instructions">
+<meta itemprop="description" content="First steps Step #1:The app runs in a browser from this adress:
+Shriveling world
+Step #2: Once the app runs in the browser data is read in two ways:
+a. Cick on predefined dataset list on the left side of the broser window b. Introduce data in the app by grag&rsquo;n&rsquo;drop (see below)
+Attention: in any case data processing may take time, depending on the number of cities. So once data is introduced, just wait.">
+<meta itemprop="datePublished" content="2020-03-19T06:59:00&#43;01:00" />
+<meta itemprop="dateModified" content="2020-03-19T06:59:00&#43;01:00" />
+<meta itemprop="wordCount" content="449">
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Shriveling world</h1>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="../shriveling_world_documentation/">User documentation</a></li>
+<li><a href="documentation/">Developper documentation</a></li>
+<li><a href="app/">Application</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>User instructions</h1>
+<h2 id="first-steps">First steps</h2>
+<p><strong>Step #1</strong>:The app runs in a browser from this adress:</p>
+<p><a href="%7B%7B$.Site.BaseURL/app/%3E%7D%7D">Shriveling world</a></p>
+<p><strong>Step #2</strong>: Once the app runs in the browser data is read in two ways:</p>
+<p>a. Cick on predefined dataset list on the left side of the broser window
+b. Introduce data in the app by grag&rsquo;n&rsquo;drop (see below)</p>
+<p>Attention: in any case data processing may take time, depending on the number of cities. So once data is introduced, just wait. Seconds or a few minutes should suffice.</p>
+<p><strong>Step #3</strong>: enjoy! navigate around the threedimensional structure with mouse controls; define projection through interface; define desired control parameters through the interface on the right. Reload the page in the browser before changing dataset.</p>
+<h2 id="introducing-data-in-the-application-by-dragndrop">Introducing data in the application by drag&rsquo;n&rsquo;drop</h2>
+<p>Drag&rsquo;n&rsquo;drop the following geojson and csv files found in the folder datasets in the web app:</p>
+<ul>
+<li>cities.csv</li>
+<li>population.csv</li>
+<li>transport_mode_code.csv</li>
+<li>transport_mode_speed.csv</li>
+<li>transport_network.csv</li>
+<li>110m_land_shrivel.geojson</li>
+</ul>
+<h2 id="instructions-for-use">Instructions for use</h2>
+<p>Instructions for the application are provided in a lateral user interface.</p>
+<p>Export to gltf (.obj) file format is available (red button in the bottom). In order to import in Blender the file produced from the app, <a href="https://github.com/ksons/gltf-blender-importer">a Blender plugin must be installed</a></p>
+<p>Instructions to the application can also be entered in the console (F12) of the browser</p>
+<p><code>shriveling.configuration.XXX=value</code></p>
+<p>with XXX and value in the following range:</p>
+<ul>
+<li>intrudedHeightRatio : sets the heigth of cones, in the range [0,1], a ratio of the earth radius</li>
+</ul>
+<p>For these other following command lines an UI already exists (indicated here as a backup solution)</p>
+<ul>
+<li>coneStep :  modifies the visual aspect of cones (default value is 15 degrees, a facet = 15°)</li>
+<li>projectionInit : initial projection with values in in the following range :
+<ul>
+<li>&lsquo;none&rsquo; for a three dimensional unprojected representation</li>
+<li>&lsquo;equirectangular&rsquo; or 1 for an equilateral flat representation</li>
+<li>&lsquo;Mercator&rsquo; or 2 for a 2-dimensional Mercator</li>
+</ul>
+</li>
+<li>projectionEnd : the final projection with value as projectionBegin</li>
+<li>projectionPercent: transition value between projectionBegin and projectionEnd. Value included in the range 0 to 100 included.</li>
+<li>year: base year of the representation (value in the networks files)</li>
+<li>pointsPerLine=X where X is an integer between 1 and 199 included. This value influences the way curves are drawn. The value <strong>zero</strong> draws all straight lines, while the value <strong>1</strong> draws broken lines</li>
+</ul>
+<h2 id="testing-lengths-and-angles">Testing lengths and angles</h2>
+<p>As the final output of the tool is, in the general case, an image, testing the distances and angles is a way to make sure the model is correct:</p>
+<ul>
+<li>length of straight edges and links can be <a href="https://timespace.hypotheses.org/115">measured with a ruler on the screen</a> or on a printed image</li>
+<li>length of curves may be measured by means of a little string adjusted along the image and then measured with the ruler</li>
+<li>measuring angles with <a href="https://www.ginifab.com/feeds/angle_measurement/">an on-line protractor tool</a></li>
+</ul>
+<div class="edit-meta">
+Last updated on 19 Mar 2020
+
+
+<br>
+Published on 19 Mar 2020
+<br></div><nav class="pagination"><a class="nav nav-next" href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/" title="Documentations">Next - Documentations <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>
