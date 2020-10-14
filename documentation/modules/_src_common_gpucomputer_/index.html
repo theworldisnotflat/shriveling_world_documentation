@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://theworldisnotflat.github.io/shriveling_world_documentation/css/chroma.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script src="https://theworldisnotflat.github.io/shriveling_world_documentation/js/bundle.js"></script><style>
 :root {}
 </style>
@@ -22,8 +23,8 @@ Defined in src/common/gpuComputer.ts:26
 Functions generateTextureOptions ▸ generateTextureOptions(gl: WebGL2RenderingContext, texturesType: object): object" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_common_gpucomputer_/" />
-<meta property="article:published_time" content="2020-10-02T09:42:20+00:00" />
-<meta property="article:modified_time" content="2020-10-02T09:42:20+00:00" />
+<meta property="article:published_time" content="2020-10-14T12:20:57+00:00" />
+<meta property="article:modified_time" content="2020-10-14T12:20:57+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="documentation"/>
 <meta name="twitter:description" content="shriveling the world documentation › &ldquo;src/common/gpuComputer&rdquo;
@@ -35,8 +36,8 @@ Functions generateTextureOptions ▸ generateTextureOptions(gl: WebGL2RenderingC
 Module: &ldquo;src/common/gpuComputer&rdquo; Index Classes  GPUComputer OffscreenCanvas  Variables  vertexCode  Functions  generateTextureOptions  Variables Const vertexCode • vertexCode: string = &lsquo;#version 300 es\n&rsquo; &#43; &lsquo;in vec2 position;\n&rsquo; &#43; &lsquo;in vec2 texture;\n&rsquo; &#43; &lsquo;out vec2 pos;\n&rsquo; &#43; &lsquo;void main(void) {\n&rsquo; &#43; &#39; pos = texture;\n&rsquo; &#43; &#39; gl_Position = vec4(position.xy, 0.0, 1.0);\n&rsquo; &#43; &lsquo;}\n&rsquo;
 Defined in src/common/gpuComputer.ts:26
 Functions generateTextureOptions ▸ generateTextureOptions(gl: WebGL2RenderingContext, texturesType: object): object">
-<meta itemprop="datePublished" content="2020-10-02T09:42:20&#43;00:00" />
-<meta itemprop="dateModified" content="2020-10-02T09:42:20&#43;00:00" />
+<meta itemprop="datePublished" content="2020-10-14T12:20:57&#43;00:00" />
+<meta itemprop="dateModified" content="2020-10-14T12:20:57&#43;00:00" />
 <meta itemprop="wordCount" content="83">
 
 
@@ -44,7 +45,6 @@ Functions generateTextureOptions ▸ generateTextureOptions(gl: WebGL2RenderingC
 <meta itemprop="keywords" content="documentation," /></head>
 <body><div class="container"><header>
 <h1>Shriveling world</h1>
-
 </header>
 <div class="global-menu">
 <nav>
@@ -111,19 +111,21 @@ Functions generateTextureOptions ▸ generateTextureOptions(gl: WebGL2RenderingC
 <li>[ <strong>x</strong>: <em>string</em>]: TextureOptions</li>
 </ul>
 <div class="edit-meta">
-Last updated on 2 Oct 2020
+Last updated on 14 Oct 2020
 
 
 <br>
-Published on 2 Oct 2020
+Published on 14 Oct 2020
 <br></div><nav class="pagination"><a class="nav nav-prev" href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_common_configuration_/" title="documentation"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - documentation</a>
 <a class="nav nav-next" href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_common_referential_/" title="documentation">Next - documentation <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
-</main><div class="sidebar">
+</main>
+<div class="sidebar">
 
 <div class="sidebar-footer"></div>
 </div>
+
 </div><a href="#" id="backtothetop-fixed" class="backtothetop"
  data-backtothetop-duration="600"
  data-backtothetop-easing="easeOutQuart"

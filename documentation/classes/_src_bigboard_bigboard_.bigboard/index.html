@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://theworldisnotflat.github.io/shriveling_world_documentation/css/chroma.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script src="https://theworldisnotflat.github.io/shriveling_world_documentation/js/bundle.js"></script><style>
 :root {}
 </style>
@@ -22,8 +23,8 @@ This class controls all the application:
  the list of _cones, _countries, curves This is where the THREE.JS scene is defined with commands and behaviors  Hierarchy  BigBoard  Index Constructors  constructor  Properties  _cameraO _cameraP _controls _datasetManager _geometryText _merger _populations _renderer _scene _showCitiesName _sizetext _stats _windowHalfX _windowHalfY ambient coneBoard countryBoard helper light orthographique configuration  Accessors  getMergerI lookupCones lookupCountries scaleCones scaleCountries showCones showCountries state withLimits  Methods  _animate _init addCones addCountries cleanAll cleanCones cleanCountries exporterOBJ extrude getConeByMouse getCones getCountries getCountryByMouse highLightCones highLightCountries rescaleText setLimits showCitiesName showConesCriterias showCountriesCriterias toggleShowCity updateCityName  Constructors constructor &#43; new BigBoard(): BigBoard" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_bigboard_bigboard_.bigboard/" />
-<meta property="article:published_time" content="2020-10-02T09:42:20+00:00" />
-<meta property="article:modified_time" content="2020-10-02T09:42:20+00:00" />
+<meta property="article:published_time" content="2020-10-14T12:20:57+00:00" />
+<meta property="article:modified_time" content="2020-10-14T12:20:57+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="documentation"/>
 <meta name="twitter:description" content="shriveling the world documentation › &ldquo;src/bigBoard/bigBoard&rdquo; › BigBoard
@@ -35,8 +36,8 @@ This class controls all the application:
 Class: BigBoard C&rsquo;est la classe qui contrôle toute l&rsquo;application: la liste des cônes, pays et courbes ainsi que la scene THREE.JS &#43; les commandes et le comportement&hellip;
 This class controls all the application:
  the list of _cones, _countries, curves This is where the THREE.JS scene is defined with commands and behaviors  Hierarchy  BigBoard  Index Constructors  constructor  Properties  _cameraO _cameraP _controls _datasetManager _geometryText _merger _populations _renderer _scene _showCitiesName _sizetext _stats _windowHalfX _windowHalfY ambient coneBoard countryBoard helper light orthographique configuration  Accessors  getMergerI lookupCones lookupCountries scaleCones scaleCountries showCones showCountries state withLimits  Methods  _animate _init addCones addCountries cleanAll cleanCones cleanCountries exporterOBJ extrude getConeByMouse getCones getCountries getCountryByMouse highLightCones highLightCountries rescaleText setLimits showCitiesName showConesCriterias showCountriesCriterias toggleShowCity updateCityName  Constructors constructor &#43; new BigBoard(): BigBoard">
-<meta itemprop="datePublished" content="2020-10-02T09:42:20&#43;00:00" />
-<meta itemprop="dateModified" content="2020-10-02T09:42:20&#43;00:00" />
+<meta itemprop="datePublished" content="2020-10-14T12:20:57&#43;00:00" />
+<meta itemprop="dateModified" content="2020-10-14T12:20:57&#43;00:00" />
 <meta itemprop="wordCount" content="1261">
 
 
@@ -44,7 +45,6 @@ This class controls all the application:
 <meta itemprop="keywords" content="documentation," /></head>
 <body><div class="container"><header>
 <h1>Shriveling world</h1>
-
 </header>
 <div class="global-menu">
 <nav>
@@ -787,19 +787,21 @@ cities names</p>
 <p>Update all the city which will be displayed regarding the population threshold paramater</p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <div class="edit-meta">
-Last updated on 2 Oct 2020
+Last updated on 14 Oct 2020
 
 
 <br>
-Published on 2 Oct 2020
+Published on 14 Oct 2020
 <br></div><nav class="pagination"><a class="nav nav-prev" href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/" title="Documentations"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Documentations</a>
 <a class="nav nav-next" href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_bigboard_datasetmanager_.datasetmanager/" title="documentation">Next - documentation <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
-</main><div class="sidebar">
+</main>
+<div class="sidebar">
 
 <div class="sidebar-footer"></div>
 </div>
+
 </div><a href="#" id="backtothetop-fixed" class="backtothetop"
  data-backtothetop-duration="600"
  data-backtothetop-easing="easeOutQuart"
