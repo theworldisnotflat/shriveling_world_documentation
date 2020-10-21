@@ -5,10 +5,6 @@
     <link>https://theworldisnotflat.github.io/shriveling_world_documentation/categories/</link>
     <description>Recent content in Categories on Shriveling world</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-fr</language>
-    
-	<atom:link href="https://theworldisnotflat.github.io/shriveling_world_documentation/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>fr-fr</language><atom:link href="https://theworldisnotflat.github.io/shriveling_world_documentation/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

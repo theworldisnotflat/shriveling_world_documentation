@@ -6,19 +6,16 @@
     <description>Recent content in documentation on Shriveling world</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Wed, 14 Oct 2020 12:20:57 +0000</lastBuildDate>
-    
-	<atom:link href="https://theworldisnotflat.github.io/shriveling_world_documentation/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 21 Oct 2020 17:37:13 +0000</lastBuildDate><atom:link href="https://theworldisnotflat.github.io/shriveling_world_documentation/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_bigboard_bigboard_.bigboard/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_bigboard_bigboard_.bigboard/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/bigBoard/bigBoard&amp;rdquo; › BigBoard
-Class: BigBoard C&amp;rsquo;est la classe qui contrôle toute l&amp;rsquo;application: la liste des cônes, pays et courbes ainsi que la scene THREE.JS + les commandes et le comportement&amp;hellip;
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/bigBoard/bigBoard&amp;rdquo; / BigBoard
+ Class: BigBoard C&amp;rsquo;est la classe qui contrôle toute l&amp;rsquo;application: la liste des cônes, pays et courbes ainsi que la scene THREE.JS + les commandes et le comportement&amp;hellip;
 This class controls all the application:
  the list of _cones, _countries, curves This is where the THREE.JS scene is defined with commands and behaviors  Hierarchy  BigBoard  Index Constructors  constructor  Properties  _cameraO _cameraP _controls _datasetManager _geometryText _merger _populations _renderer _scene _showCitiesName _sizetext _stats _windowHalfX _windowHalfY ambient coneBoard countryBoard helper light orthographique configuration  Accessors  getMergerI lookupCones lookupCountries scaleCones scaleCountries showCones showCountries state withLimits  Methods  _animate _init addCones addCountries cleanAll cleanCones cleanCountries exporterOBJ extrude getConeByMouse getCones getCountries getCountryByMouse highLightCones highLightCountries rescaleText setLimits showCitiesName showConesCriterias showCountriesCriterias toggleShowCity updateCityName  Constructors constructor + new BigBoard(): BigBoard</description>
     </item>
@@ -26,192 +23,197 @@ This class controls all the application:
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_bigboard_datasetmanager_.datasetmanager/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_bigboard_datasetmanager_.datasetmanager/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/bigBoard/datasetManager&amp;rdquo; › dataSetManager
-Class: dataSetManager Hierarchy  dataSetManager  Index Constructors  constructor  Methods  _initInteraction  Constructors constructor + new dataSetManager(bigBoard: BigBoard, gui: GUI): dataSetManager
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/bigBoard/datasetManager&amp;rdquo; / DataSetManager
+ Class: DataSetManager Hierarchy  DataSetManager  Index Constructors  constructor  Methods  _initInteraction  Constructors constructor + new DataSetManager(bigBoard: BigBoard, gui: GUI): DataSetManager
 Defined in src/bigBoard/datasetManager.ts:7
-Parameters:
-   Name Type     bigBoard BigBoard   gui GUI    Returns: dataSetManager
-Methods Private _initInteraction ▸ _initInteraction(bigBoard: BigBoard, gui: GUI): Promise‹void›
-Defined in src/bigBoard/datasetManager.ts:12
-Parameters:
-   Name Type     bigBoard BigBoard   gui GUI    Returns: Promise‹void›</description>
+Parameters:    Name Type     bigBoard BigBoard   gui GUI    Returns: DataSetManager
+Methods _initInteraction ▸ Private_initInteraction(bigBoard: BigBoard, gui: GUI): Promise&amp;lt;void&amp;gt;
+Defined in src/bigBoard/datasetManager.ts:12</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_bigboard_guidat_.gui/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_bigboard_guidat_.gui/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/bigBoard/guiDAT&amp;rdquo; › GUI
-Class: GUI Hierarchy  GUI  Index Constructors  constructor  Properties  _bigBoard _merger  Methods  _initInteraction filesToInsert  Constructors constructor + new GUI(bigBoard: BigBoard, container: HTMLElement, merger: Merger): GUI
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/bigBoard/guiDAT&amp;rdquo; / GUI
+ Class: GUI Hierarchy  GUI  Index Constructors  constructor  Properties  _bigBoard _merger  Methods  _initInteraction filesToInsert  Constructors constructor + new GUI(bigBoard: BigBoard, container: HTMLElement, merger: Merger): GUI
 Defined in src/bigBoard/guiDAT.ts:54
-Parameters:
-   Name Type     bigBoard BigBoard   container HTMLElement   merger Merger    Returns: GUI
-Properties Private Readonly _bigBoard • _bigBoard: BigBoard</description>
+Parameters:    Name Type     bigBoard BigBoard   container HTMLElement   merger Merger    Returns: GUI</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_bigboard_merger_.merger/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_bigboard_merger_.merger/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/bigBoard/merger&amp;rdquo; › Merger
-Class: Merger The class Merger will
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/bigBoard/merger&amp;rdquo; / Merger
+ Class: Merger The class Merger will
  introduce the data into tables  _cities, _populations, _transportModeSpeed, _transportModeCode, _transportNetwork, _state and [[_linksAndTranspModes]]    This class will contain the function merge
-Hierarchy  Merger  Index Properties  _cities _edgesAndTranspModes _populations _state _transportModeCode _transportModeSpeed _transportNetwork  Accessors  Cities conesAndCurvesData edgesWithTranspModes maxYear minYear state transportNames  Methods  CitiesByIndex _checkState add clear merge  Properties Private _cities • _cities: ICity[] = []</description>
+Hierarchy  Merger  Index Properties  _cities _edgesAndTranspModes _populations _state _transportModeCode _transportModeSpeed _transportNetwork  Accessors  Cities conesAndCurvesData edgesWithTranspModes maxYear minYear state transportNames  Methods  CitiesByIndex _checkState add clear merge  Properties _cities • Private _cities: ICity[] = []</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_gpucomputer_.gpucomputer/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_gpucomputer_.gpucomputer/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/common/gpuComputer&amp;rdquo; › GPUComputer
-Class: GPUComputer Hierarchy  GPUComputer  Index Constructors  constructor  Properties  _attachments _bufferAttachments _fbi _programInfo _textures _texturesOptions _uniforms _attributesInfo _gl  Methods  calculate updateTextures updateUniforms GPUComputerFactory  Constructors Private constructor + new GPUComputer(fragmentCode: string, texturesOptions: object, textures: object, outputNumber: number): GPUComputer
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/common/gpuComputer&amp;rdquo; / GPUComputer
+ Class: GPUComputer Hierarchy  GPUComputer  Index Constructors  constructor  Properties  _attachments _bufferAttachments _fbi _programInfo _textures _texturesOptions _uniforms _attributesInfo _gl  Methods  calculate updateTextures updateUniforms GPUComputerFactory  Constructors constructor + Privatenew GPUComputer(fragmentCode: string, texturesOptions: { [x:string]: TextureOptions; }, textures: { [x:string]: WebGLTexture; }, outputNumber: number): GPUComputer
 Defined in src/common/gpuComputer.ts:132
-Parameters:
-   Name Type     fragmentCode string   texturesOptions object   textures object   outputNumber number    Returns: GPUComputer</description>
+Parameters:    Name Type     fragmentCode string   texturesOptions { [x:string]: TextureOptions; }   textures { [x:string]: WebGLTexture; }   outputNumber number    Returns: GPUComputer</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_gpucomputer_.offscreencanvas/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_gpucomputer_.offscreencanvas/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/common/gpuComputer&amp;rdquo; › OffscreenCanvas
-Class: OffscreenCanvas Hierarchy   HTMLCanvasElement
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/common/gpuComputer&amp;rdquo; / OffscreenCanvas
+ Class: OffscreenCanvas Hierarchy   HTMLCanvasElement
 ↳ OffscreenCanvas
-  Index Constructors  constructor  Properties  ATTRIBUTE_NODE CDATA_SECTION_NODE COMMENT_NODE DOCUMENT_FRAGMENT_NODE DOCUMENT_NODE DOCUMENT_POSITION_CONTAINED_BY DOCUMENT_POSITION_CONTAINS DOCUMENT_POSITION_DISCONNECTED DOCUMENT_POSITION_FOLLOWING DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC DOCUMENT_POSITION_PRECEDING DOCUMENT_TYPE_NODE ELEMENT_NODE ENTITY_NODE ENTITY_REFERENCE_NODE NOTATION_NODE PROCESSING_INSTRUCTION_NODE TEXT_NODE accessKey accessKeyLabel assignedSlot attributes autocapitalize autofocus baseURI childElementCount childNodes children classList className clientHeight clientLeft clientTop clientWidth contentEditable dataset dir draggable firstChild firstElementChild height hidden id innerHTML innerText inputMode isConnected isContentEditable lang lastChild lastElementChild localName namespaceURI nextElementSibling nextSibling nodeName nodeType nodeValue nonce offsetHeight offsetLeft offsetParent offsetTop offsetWidth onabort onanimationcancel onanimationend onanimationiteration onanimationstart onauxclick onblur oncancel oncanplay oncanplaythrough onchange onclick onclose oncontextmenu oncopy oncuechange oncut ondblclick ondrag ondragend ondragenter ondragexit ondragleave ondragover ondragstart ondrop ondurationchange onemptied onended onerror onfocus onfullscreenchange onfullscreenerror ongotpointercapture oninput oninvalid onkeydown onkeypress onkeyup onload onloadeddata onloadedmetadata onloadstart onlostpointercapture onmousedown onmouseenter onmouseleave onmousemove onmouseout onmouseover onmouseup onpaste onpause onplay onplaying onpointercancel onpointerdown onpointerenter onpointerleave onpointermove onpointerout onpointerover onpointerup onprogress onratechange onreset onresize onscroll onsecuritypolicyviolation onseeked onseeking onselect onselectionchange onselectstart onstalled onsubmit onsuspend ontimeupdate ontoggle ontouchcancel ontouchend ontouchmove ontouchstart ontransitioncancel ontransitionend ontransitionrun ontransitionstart onvolumechange onwaiting onwheel outerHTML ownerDocument parentElement parentNode prefix previousElementSibling previousSibling scrollHeight scrollLeft scrollTop scrollWidth shadowRoot slot spellcheck style tabIndex tagName textContent title translate width HTMLCanvasElement  Methods  addEventListener after animate append appendChild attachShadow before blur click cloneNode closest compareDocumentPosition contains dispatchEvent focus getAnimations getAttribute getAttributeNS getAttributeNames getAttributeNode getAttributeNodeNS getBoundingClientRect getClientRects getContext getElementsByClassName getElementsByTagName getElementsByTagNameNS getRootNode hasAttribute hasAttributeNS hasAttributes hasChildNodes hasPointerCapture insertAdjacentElement insertAdjacentHTML insertAdjacentText insertBefore isDefaultNamespace isEqualNode isSameNode lookupNamespaceURI lookupPrefix matches msGetRegionContent normalize prepend querySelector querySelectorAll releasePointerCapture remove removeAttribute removeAttributeNS removeAttributeNode removeChild removeEventListener replaceChild replaceWith requestFullscreen requestPointerLock scroll scrollBy scrollIntoView scrollTo setAttribute setAttributeNS setAttributeNode setAttributeNodeNS setPointerCapture toBlob toDataURL toggleAttribute transferControlToOffscreen webkitMatchesSelector  Constructors constructor + new OffscreenCanvas(width: number, height: number): OffscreenCanvas</description>
+  Index Constructors  constructor  Properties  ATTRIBUTE_NODE CDATA_SECTION_NODE COMMENT_NODE DOCUMENT_FRAGMENT_NODE DOCUMENT_NODE DOCUMENT_POSITION_CONTAINED_BY DOCUMENT_POSITION_CONTAINS DOCUMENT_POSITION_DISCONNECTED DOCUMENT_POSITION_FOLLOWING DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC DOCUMENT_POSITION_PRECEDING DOCUMENT_TYPE_NODE ELEMENT_NODE ENTITY_NODE ENTITY_REFERENCE_NODE NOTATION_NODE PROCESSING_INSTRUCTION_NODE TEXT_NODE accessKey accessKeyLabel assignedSlot attributes autocapitalize autofocus baseURI childElementCount childNodes children classList className clientHeight clientLeft clientTop clientWidth contentEditable dataset dir draggable enterKeyHint firstChild firstElementChild height hidden id innerHTML innerText inputMode isConnected isContentEditable lang lastChild lastElementChild localName namespaceURI nextElementSibling nextSibling nodeName nodeType nodeValue nonce offsetHeight offsetLeft offsetParent offsetTop offsetWidth onabort onanimationcancel onanimationend onanimationiteration onanimationstart onauxclick onblur oncancel oncanplay oncanplaythrough onchange onclick onclose oncontextmenu oncopy oncuechange oncut ondblclick ondrag ondragend ondragenter ondragexit ondragleave ondragover ondragstart ondrop ondurationchange onemptied onended onerror onfocus onfullscreenchange onfullscreenerror ongotpointercapture oninput oninvalid onkeydown onkeypress onkeyup onload onloadeddata onloadedmetadata onloadstart onlostpointercapture onmousedown onmouseenter onmouseleave onmousemove onmouseout onmouseover onmouseup onpaste onpause onplay onplaying onpointercancel onpointerdown onpointerenter onpointerleave onpointermove onpointerout onpointerover onpointerup onprogress onratechange onreset onresize onscroll onsecuritypolicyviolation onseeked onseeking onselect onselectionchange onselectstart onstalled onsubmit onsuspend ontimeupdate ontoggle ontouchcancel ontouchend ontouchmove ontouchstart ontransitioncancel ontransitionend ontransitionrun ontransitionstart onvolumechange onwaiting onwheel outerHTML ownerDocument parentElement parentNode prefix previousElementSibling previousSibling scrollHeight scrollLeft scrollTop scrollWidth shadowRoot slot spellcheck style tabIndex tagName textContent title translate width HTMLCanvasElement  Methods  addEventListener after animate append appendChild attachShadow before blur click cloneNode closest compareDocumentPosition contains dispatchEvent focus getAnimations getAttribute getAttributeNS getAttributeNames getAttributeNode getAttributeNodeNS getBoundingClientRect getClientRects getContext getElementsByClassName getElementsByTagName getElementsByTagNameNS getRootNode hasAttribute hasAttributeNS hasAttributes hasChildNodes hasPointerCapture insertAdjacentElement insertAdjacentHTML insertAdjacentText insertBefore isDefaultNamespace isEqualNode isSameNode lookupNamespaceURI lookupPrefix matches msGetRegionContent normalize prepend querySelector querySelectorAll releasePointerCapture remove removeAttribute removeAttributeNS removeAttributeNode removeChild removeEventListener replaceChild replaceWith requestFullscreen requestPointerLock scroll scrollBy scrollIntoView scrollTo setAttribute setAttributeNS setAttributeNode setAttributeNodeNS setPointerCapture toBlob toDataURL toggleAttribute transferControlToOffscreen webkitMatchesSelector  Constructors constructor + new OffscreenCanvas(width: number, height: number): OffscreenCanvas</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_referential_.coordinate/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_referential_.coordinate/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/common/referential&amp;rdquo; › Coordinate
-Class: Coordinate Hierarchy  Coordinate  Index Constructors  constructor  Properties  (https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_referential_.coordinate/#x) y z  Methods  add distance dot multiplyVector normalize scalar add distance dot multiplyVector scalar  Constructors constructor + new Coordinate(x: number, y: number, z: number): Coordinate
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/common/referential&amp;rdquo; / Coordinate
+ Class: Coordinate Hierarchy  Coordinate  Index Constructors  constructor  Properties  (https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_referential_.coordinate/#x) y z  Methods  add distance dot multiplyVector normalize scalar add distance dot multiplyVector scalar  Constructors constructor + new Coordinate(x?: number, y?: number, z?: number): Coordinate
 Defined in src/common/referential.ts:71
-Parameters:
-   Name Type Default     x number 0   y number 0   z number 0    Returns: Coordinate</description>
+Parameters:    Name Type Default value     x number 0   y number 0   z number 0    Returns: Coordinate</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_referential_.nedlocal/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_referential_.nedlocal/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/common/referential&amp;rdquo; › NEDLocal
-Class: NEDLocal General model for the orientation of geometric elements
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/common/referential&amp;rdquo; / NEDLocal
+ Class: NEDLocal General model for the orientation of geometric elements
 As cones are drawn below the earth surface, we chose the North East Down orientation that is the most adapted to our model.
 North East Down generates &amp;lsquo;navigation&amp;rsquo; like orientations for angles on the sphere and on a projected plane
-Hierarchy  NEDLocal  Index Constructors  constructor  Properties  _ECEFRef _glslData _matECEF2NED _matNED2ECEF cartoRef  Accessors  ned2ECEFMatrix  Methods  NED2Cartographic cartographic2NED direction2Position getClock project  Constructors constructor + new NEDLocal(summit: Cartographic): NEDLocal</description>
+Hierarchy  NEDLocal  Index Constructors  constructor  Properties  _ECEFRef _glslData _matECEF2NED _matNED2ECEF cartoRef  Accessors  ned2ECEFMatrix  Methods  NED2Cartographic cartographic2NED direction2Position getClock project  Constructors constructor + new NEDLocal(summit?</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_utils_.cartographic/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_common_utils_.cartographic/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/common/utils&amp;rdquo; › Cartographic
-Class: Cartographic Hierarchy  Cartographic  Implements  ICartographic  Index Constructors  constructor  Properties  height latitude longitude  Methods  approximateDistance clone direction exactDistance lerp toThreeGLSL approximateDistance direction exactDistance isInside lerp  Constructors constructor + new Cartographic(longitude: number, latitude: number, height: number, isRadians: boolean): Cartographic
-Defined in src/common/utils.ts:82
-Parameters:
-   Name Type Default     longitude number 0   latitude number 0   height number 0   isRadians boolean true    Returns: Cartographic</description>
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/common/utils&amp;rdquo; / Cartographic
+ Class: Cartographic Hierarchy  Cartographic  Implements  ICartographic  Index Constructors  constructor  Properties  height latitude longitude  Methods  approximateDistance clone direction exactDistance lerp toThreeGLSL approximateDistance direction exactDistance isInside lerp  Constructors constructor + new Cartographic(longitude?: number, latitude?: number, height?: number, isRadians?: boolean): Cartographic
+Defined in src/common/utils.ts:86
+Parameters:    Name Type Default value     longitude number 0   latitude number 0   height number 0   isRadians boolean true    Returns: Cartographic</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_cone_base_.pseudocone/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_cone_base_.pseudocone/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/cone/base&amp;rdquo; › PseudoCone
-Class: PseudoCone Hierarchy   Mesh
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/cone/base&amp;rdquo; / PseudoCone
+ Class: PseudoCone Hierarchy   Mesh
 ↳ PseudoCone
-↳ ConeMeshShader
+↳↳ ConeMeshShader
   Index Constructors  constructor  Properties  cartographicPosition castShadow children cityCode customDepthMaterial customDistanceMaterial frustumCulled geometry id isMesh isObject3D layers material matrix matrixAutoUpdate matrixWorld matrixWorldNeedsUpdate modelViewMatrix morphTargetDictionary morphTargetInfluences name normalMatrix onAfterRender onBeforeRender otherProperties parent position quaternion receiveShadow renderOrder rotation scale type up userData uuid visible withLimits DefaultMatrixAutoUpdate DefaultUp  Methods  add addEventListener applyMatrix4 applyQuaternion attach clone copy dispatchEvent dispose getObjectById getObjectByName getObjectByProperty getWorldDirection getWorldPosition getWorldQuaternion getWorldScale hasEventListener localToWorld lookAt raycast remove removeEventListener rotateOnAxis rotateOnWorldAxis rotateX rotateY rotateZ setRotationFromAxisAngle setRotationFromEuler setRotationFromMatrix setRotationFromQuaternion toJSON translateOnAxis translateX translateY translateZ traverse traverseAncestors traverseVisible updateMatrix updateMatrixWorld updateMorphTargets updateWorldMatrix worldToLocal  Constructors constructor + new PseudoCone(geometry?</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_cone_coneboard_.coneboard/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_cone_coneboard_.coneboard/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/cone/coneBoard&amp;rdquo; › ConeBoard
-Class: ConeBoard Hierarchy  ConeBoard  Index Constructors  constructor  Properties  _camera _countries _highlitedCriterias _opacity _raycaster _renderer _scale _scene _selectedMeshs _show _sumUpProperties _withLimits coneMeshCollection curveCollection  Accessors  lookupCriterias opacity scale show withLimits  Methods  add clean getMeshByMouse highLight searchMesh setLayer setLimits showCriterias  Constructors constructor + new ConeBoard(scene: Scene, camera: Camera, countries: CountryBoard, renderer: WebGLRenderer): ConeBoard
-Defined in src/cone/coneBoard.</description>
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/cone/coneBoard&amp;rdquo; / ConeBoard
+ Class: ConeBoard Hierarchy  ConeBoard  Index Constructors  constructor  Properties  _camera _countries _highlitedCriterias _opacity _raycaster _renderer _scale _scene _selectedMeshs _show _sumUpProperties _withLimits coneMeshCollection curveCollection  Accessors  lookupCriterias opacity scale show withLimits  Methods  add clean getMeshByMouse highLight searchMesh setLayer setLimits showCriterias  Constructors constructor + new ConeBoard(scene: Scene, camera: Camera, countries: CountryBoard, renderer: WebGLRenderer): ConeBoard</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_cone_conemeshshader_.conemeshshader/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_cone_conemeshshader_.conemeshshader/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/cone/coneMeshShader&amp;rdquo; › ConeMeshShader
-Class: ConeMeshShader Class ConeMeshShader
-Hierarchy ↳ PseudoCone
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/cone/coneMeshShader&amp;rdquo; / ConeMeshShader
+ Class: ConeMeshShader Class ConeMeshShader
+Hierarchy   PseudoCone
 ↳ ConeMeshShader
-Index Constructors  constructor  Properties  _cityCode _complexAlpha _position _withLimits castShadow children customDepthMaterial customDistanceMaterial frustumCulled geometry id isMesh isObject3D layers material matrix matrixAutoUpdate matrixWorld matrixWorldNeedsUpdate modelViewMatrix morphTargetDictionary morphTargetInfluences name normalMatrix onAfterRender onBeforeRender otherProperties parent position quaternion receiveShadow renderOrder rotation scale type up userData uuid visible DefaultMatrixAutoUpdate DefaultUp  Accessors  cartographicPosition cityCode withLimits discriminant  Methods  add addEventListener applyMatrix4 applyQuaternion attach clone copy dispatchEvent dispose getObjectById getObjectByName getObjectByProperty getWorldDirection getWorldPosition getWorldQuaternion getWorldScale getcomplexAlpha hasEventListener localToWorld lookAt raycast remove removeEventListener rotateOnAxis rotateOnWorldAxis rotateX rotateY rotateZ setGeometry setRotationFromAxisAngle setRotationFromEuler setRotationFromMatrix setRotationFromQuaternion toJSON translateOnAxis translateX translateY translateZ traverse traverseAncestors traverseVisible updateMatrix updateMatrixWorld updateMorphTargets updateWorldMatrix worldToLocal generateCones  Constructors Private constructor + new ConeMeshShader(cityCode: string, position: Cartographic, terrestrialData: ILookupComplexAlpha, properties: any): ConeMeshShader</description>
+  Index Constructors  constructor  Properties  _cityCode _complexAlpha _position _withLimits castShadow children customDepthMaterial customDistanceMaterial frustumCulled geometry id isMesh isObject3D layers material matrix matrixAutoUpdate matrixWorld matrixWorldNeedsUpdate modelViewMatrix morphTargetDictionary morphTargetInfluences name normalMatrix onAfterRender onBeforeRender otherProperties parent position quaternion receiveShadow renderOrder rotation scale type up userData uuid visible DefaultMatrixAutoUpdate DefaultUp  Accessors  cartographicPosition cityCode withLimits discriminant  Methods  add addEventListener applyMatrix4 applyQuaternion attach clone copy dispatchEvent dispose getObjectById getObjectByName getObjectByProperty getWorldDirection getWorldPosition getWorldQuaternion getWorldScale getcomplexAlpha hasEventListener localToWorld lookAt raycast remove removeEventListener rotateOnAxis rotateOnWorldAxis rotateX rotateY rotateZ setGeometry setRotationFromAxisAngle setRotationFromEuler setRotationFromMatrix setRotationFromQuaternion toJSON translateOnAxis translateX translateY translateZ traverse traverseAncestors traverseVisible updateMatrix updateMatrixWorld updateMorphTargets updateWorldMatrix worldToLocal generateCones  Constructors constructor + Privatenew ConeMeshShader(cityCode: string, position: Cartographic, terrestrialData: ILookupComplexAlpha, properties: any): ConeMeshShader</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_cone_curvemeshshader_.curvemeshshader/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_cone_curvemeshshader_.curvemeshshader/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/cone/curveMeshShader&amp;rdquo; › CurveMeshShader
-Class: CurveMeshShader Hierarchy   Line
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/cone/curveMeshShader&amp;rdquo; / CurveMeshShader
+ Class: CurveMeshShader Hierarchy   Line
 ↳ CurveMeshShader
-  Index Constructors  constructor  Properties  _speedRatio _transportName _years begin castShadow children customDepthMaterial customDistanceMaterial end frustumCulled geometry id isLine isObject3D layers material matrix matrixAutoUpdate matrixWorld matrixWorldNeedsUpdate modelViewMatrix name normalMatrix onAfterRender onBeforeRender parent position quaternion receiveShadow renderOrder rotation scale theta type up userData uuid visible DefaultMatrixAutoUpdate DefaultUp  Accessors  getTheta transportName coefficient  Methods  add addEventListener applyMatrix4 applyQuaternion attach clone computeLineDistances copy dispatchEvent dispose getObjectById getObjectByName getObjectByProperty getWorldDirection getWorldPosition getWorldQuaternion getWorldScale hasEventListener isAvailable localToWorld lookAt raycast remove removeEventListener rotateOnAxis rotateOnWorldAxis rotateX rotateY rotateZ setGeometry setRotationFromAxisAngle setRotationFromEuler setRotationFromMatrix setRotationFromQuaternion toJSON translateOnAxis translateX translateY translateZ traverse traverseAncestors traverseVisible updateMatrix updateMatrixWorld updateWorldMatrix worldToLocal generateCones  Constructors Private constructor + new CurveMeshShader(begin: string | number, end: string | number, theta: number, years: object, transportName: string): CurveMeshShader</description>
+  Index Constructors  constructor  Properties  _speedRatio _transportName _years begin castShadow children customDepthMaterial customDistanceMaterial end frustumCulled geometry id isLine isObject3D layers material matrix matrixAutoUpdate matrixWorld matrixWorldNeedsUpdate modelViewMatrix morphTargetDictionary morphTargetInfluences name normalMatrix onAfterRender onBeforeRender parent position quaternion receiveShadow renderOrder rotation scale theta type up userData uuid visible DefaultMatrixAutoUpdate DefaultUp  Accessors  getTheta transportName coefficient  Methods  add addEventListener applyMatrix4 applyQuaternion attach clone computeLineDistances copy dispatchEvent dispose getObjectById getObjectByName getObjectByProperty getWorldDirection getWorldPosition getWorldQuaternion getWorldScale hasEventListener isAvailable localToWorld lookAt raycast remove removeEventListener rotateOnAxis rotateOnWorldAxis rotateX rotateY rotateZ setGeometry setRotationFromAxisAngle setRotationFromEuler setRotationFromMatrix setRotationFromQuaternion toJSON translateOnAxis translateX translateY translateZ traverse traverseAncestors traverseVisible updateMatrix updateMatrixWorld updateMorphTargets updateWorldMatrix worldToLocal generateCones  Constructors constructor + Privatenew CurveMeshShader(begin: string | number, end: string | number, theta: number, years: { [year:string]: number; }, transportName: string): CurveMeshShader</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_country_countryboard_.countryboard/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_country_countryboard_.countryboard/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/country/countryBoard&amp;rdquo; › CountryBoard
-Class: CountryBoard Hierarchy  CountryBoard  Index Constructors  constructor  Properties  _camera _extruded _highlitedCriterias _opacity _raycaster _scale _scene _selectedMeshs _show _sumUpProperties countryMeshCollection ready  Accessors  extruded lookupCriterias opacity scale show  Methods  _reHighLight add clean extrude getMeshByMouse highLight searchMesh showCriterias  Constructors constructor + new CountryBoard(scene: Scene, camera: Camera): CountryBoard
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/country/countryBoard&amp;rdquo; / CountryBoard
+ Class: CountryBoard Hierarchy  CountryBoard  Index Constructors  constructor  Properties  _camera _extruded _highlitedCriterias _opacity _raycaster _scale _scene _selectedMeshs _show _sumUpProperties countryMeshCollection ready  Accessors  extruded lookupCriterias opacity scale show  Methods  _reHighLight add clean extrude getMeshByMouse highLight searchMesh showCriterias  Constructors constructor + new CountryBoard(scene: Scene, camera: Camera): CountryBoard
 Defined in src/country/countryBoard.ts:72
-Parameters:
-   Name Type     scene Scene   camera Camera    Returns: CountryBoard</description>
+Parameters:    Name Type     scene Scene   camera Camera    Returns: CountryBoard</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_country_countrymeshshader_.countrymeshshader/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/classes/_src_country_countrymeshshader_.countrymeshshader/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/country/countryMeshShader&amp;rdquo; › CountryMeshShader
-Class: CountryMeshShader Hierarchy   Mesh
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/country/countryMeshShader&amp;rdquo; / CountryMeshShader
+ Class: CountryMeshShader Hierarchy   Mesh
 ↳ CountryMeshShader
-  Index Constructors  constructor  Properties  _boundaryBox _extrudedLimits _extrudedPercent _mainProperty castShadow children customDepthMaterial customDistanceMaterial frustumCulled geometry id isMesh isObject3D layers material matrix matrixAutoUpdate matrixWorld matrixWorldNeedsUpdate modelViewMatrix morphTargetDictionary morphTargetInfluences name normalMatrix onAfterRender onBeforeRender otherProperties outputLimits parent position quaternion receiveShadow renderOrder rotation scale type up userData uuid visible DefaultMatrixAutoUpdate DefaultUp  Accessors  bbox extruded mainName  Methods  add addEventListener applyMatrix4 applyQuaternion attach clone copy dispatchEvent getObjectById getObjectByName getObjectByProperty getWorldDirection getWorldPosition getWorldQuaternion getWorldScale hasEventListener isInside localToWorld lookAt raycast remove removeEventListener rotateOnAxis rotateOnWorldAxis rotateX rotateY rotateZ setGeometry setRotationFromAxisAngle setRotationFromEuler setRotationFromMatrix setRotationFromQuaternion toJSON translateOnAxis translateX translateY translateZ traverse traverseAncestors traverseVisible updateMatrix updateMatrixWorld updateMorphTargets updateWorldMatrix worldToLocal generator  Constructors Private constructor + new CountryMeshShader(preMesh: IPreMesh, mainProperty: string, outputLimits: IMarkLimits): CountryMeshShader</description>
+  Index Constructors  constructor  Properties  _boundaryBox _extrudedLimits _extrudedPercent _mainProperty castShadow children customDepthMaterial customDistanceMaterial frustumCulled geometry id isMesh isObject3D layers material matrix matrixAutoUpdate matrixWorld matrixWorldNeedsUpdate modelViewMatrix morphTargetDictionary morphTargetInfluences name normalMatrix onAfterRender onBeforeRender otherProperties outputLimits parent position quaternion receiveShadow renderOrder rotation scale type up userData uuid visible DefaultMatrixAutoUpdate DefaultUp  Accessors  bbox extruded mainName  Methods  add addEventListener applyMatrix4 applyQuaternion attach clone copy dispatchEvent getObjectById getObjectByName getObjectByProperty getWorldDirection getWorldPosition getWorldQuaternion getWorldScale hasEventListener isInside localToWorld lookAt raycast remove removeEventListener rotateOnAxis rotateOnWorldAxis rotateX rotateY rotateZ setGeometry setRotationFromAxisAngle setRotationFromEuler setRotationFromMatrix setRotationFromQuaternion toJSON translateOnAxis translateX translateY translateZ traverse traverseAncestors traverseVisible updateMatrix updateMatrixWorld updateMorphTargets updateWorldMatrix worldToLocal generator  Constructors constructor + Privatenew CountryMeshShader(preMesh: IPreMesh, mainProperty: string, outputLimits: IMarkLimits): CountryMeshShader</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/enums/_src_definitions_project_.projection_enum/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/enums/_src_definitions_project_.projection_enum/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › PROJECTION_ENUM
-Enumeration: PROJECTION_ENUM List of available geographic projections
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / PROJECTION_ENUM
+ Enumeration: PROJECTION_ENUM List of available geographic projections
 Index Enumeration members  Eckert Mercator Winkel conicEquidistant equirectangular none vanDerGrinten  Enumeration members Eckert • Eckert: = 4
 Defined in src/definitions/project.ts:26
  Mercator • Mercator: = 2
@@ -226,37 +228,41 @@ Defined in src/definitions/project.ts:28
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_common_configuration_.ieventlistitem/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_common_configuration_.ieventlistitem/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/common/configuration&amp;rdquo; › IEventListItem
-Interface: IEventListItem Hierarchy  IEventListItem  Index Properties  cb scope uuid  Properties cb • cb: configurationCallback
-Defined in src/common/configuration.ts:17
- Optional scope • scope? : any
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/common/configuration&amp;rdquo; / IEventListItem
+ Interface: IEventListItem Hierarchy  IEventListItem  Index Properties  cb scope uuid  Properties cb • cb: configurationCallback
 Defined in src/common/configuration.ts:18
+ scope • Optional scope: any
+Defined in src/common/configuration.ts:19
  uuid • uuid: string
-Defined in src/common/configuration.ts:19</description>
+Defined in src/common/configuration.ts:20</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_cone_conemeshshader_.ishaderalpha/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_cone_conemeshshader_.ishaderalpha/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/cone/coneMeshShader&amp;rdquo; › IShaderAlpha
-Interface: IShaderAlpha IShaderAlpha is a table of alphas with years
-Hierarchy  IShaderAlpha  Indexable  [ year: string]: Float32Array  IShaderAlpha is a table of alphas with years</description>
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/cone/coneMeshShader&amp;rdquo; / IShaderAlpha
+ Interface: IShaderAlpha IShaderAlpha is a table of alphas with years
+Hierarchy  IShaderAlpha  Indexable ▪ [year: string]: Float32Array
+IShaderAlpha is a table of alphas with years</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_country_countrymeshshader_.ipregeometry/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_country_countrymeshshader_.ipregeometry/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/country/countryMeshShader&amp;rdquo; › IPreGeometry
-Interface: IPreGeometry Hierarchy  IPreGeometry  Index Properties  extruded indexes surfaceBoundary uvs vertice  Properties extruded • extruded: IMarkLimits
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/country/countryMeshShader&amp;rdquo; / IPreGeometry
+ Interface: IPreGeometry Hierarchy  IPreGeometry  Index Properties  extruded indexes surfaceBoundary uvs vertice  Properties extruded • extruded: IMarkLimits
 Defined in src/country/countryMeshShader.ts:19
  indexes • indexes: Uint16Array
 Defined in src/country/countryMeshShader.ts:21
@@ -271,11 +277,12 @@ Defined in src/country/countryMeshShader.ts:18</description>
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_country_countrymeshshader_.ipremesh/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_country_countrymeshshader_.ipremesh/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/country/countryMeshShader&amp;rdquo; › IPreMesh
-Interface: IPreMesh Hierarchy  IPreMesh  Index Properties  geometry properties  Properties geometry • geometry: IPreGeometry
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/country/countryMeshShader&amp;rdquo; / IPreMesh
+ Interface: IPreMesh Hierarchy  IPreMesh  Index Properties  geometry properties  Properties geometry • geometry: IPreGeometry
 Defined in src/country/countryMeshShader.ts:25
  properties • properties: any
 Defined in src/country/countryMeshShader.ts:26</description>
@@ -284,11 +291,12 @@ Defined in src/country/countryMeshShader.ts:26</description>
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ibbox/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ibbox/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › IBBox
-Interface: IBBox Hierarchy  IBBox  Index Properties  boundary maxLat maxLong minLat minLong  Properties boundary • boundary: Cartographic[]
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / IBBox
+ Interface: IBBox Hierarchy  IBBox  Index Properties  boundary maxLat maxLong minLat minLong  Properties boundary • boundary: Cartographic[]
 Defined in src/definitions/project.ts:257
  maxLat • maxLat: number
 Defined in src/definitions/project.ts:254
@@ -303,27 +311,29 @@ Defined in src/definitions/project.ts:255</description>
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icartographic/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icartographic/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ICartographic
-Interface: ICartographic In geographic (lat, lon, height) coordinates
-Hierarchy  ICartographic  Implemented by  Cartographic  Index Properties  height latitude longitude  Properties Optional height • height? : number
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ICartographic
+ Interface: ICartographic In geographic (lat, lon, height) coordinates
+Hierarchy  ICartographic  Implemented by  Cartographic  Index Properties  height latitude longitude  Properties height • Optional height: number
 Defined in src/definitions/project.ts:69
- Optional latitude • latitude? : number
+ latitude • Optional latitude: number
 Defined in src/definitions/project.ts:67
- Optional longitude • longitude? : number
+ longitude • Optional longitude: number
 Defined in src/definitions/project.ts:68</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icity/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icity/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ICity
-Interface: ICity City interface
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ICity
+ Interface: ICity City interface
 Parameters attached to each city:
  countryCode countryName cityCode urbanAgglomeration is the name of the city radius: number; // for cases of cities in islands close to a continent populations for several years as provided in csv file &amp;lsquo;population.csv&amp;rsquo; [[links]] is a table will be determined by scanning the [[ITransportNetwork]]  Hierarchy  ICity  Index Properties  cityCode countryCode countryName edges latitude longitude populations radius urbanAgglomeration  Properties cityCode • cityCode: number</description>
     </item>
@@ -331,11 +341,12 @@ Parameters attached to each city:
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icityextremityofedge/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icityextremityofedge/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ICityExtremityOfEdge
-Interface: ICityExtremityOfEdge Defines the city at the other extremity of an edge
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ICityExtremityOfEdge
+ Interface: ICityExtremityOfEdge Defines the city at the other extremity of an edge
 Hierarchy  ICityExtremityOfEdge  Index Properties  cityCode position  Properties cityCode • cityCode: string | number
 Defined in src/definitions/project.ts:303
  position • position: Cartographic
@@ -345,24 +356,25 @@ Defined in src/definitions/project.ts:304</description>
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icitygraph/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icitygraph/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ICityGraph
-Interface: ICityGraph A city and its incident links in the network:
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ICityGraph
+ Interface: ICityGraph A city and its incident links in the network:
  a referential of coordinates in NEDLocal a table of transport modes and their alphas a list of destinations and associated transport modes a table of origCityProperties  Hierarchy  ICityGraph  Index Properties  cone destinationsWithModes origCityProperties referential  Properties cone • cone: ILookupComplexAlpha
-Defined in src/definitions/project.ts:135
- destinationsWithModes • destinationsWithModes: ILookupDestWithModes</description>
+Defined in src/definitions/project.ts:135</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icomplexalphaitem/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icomplexalphaitem/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › IComplexAlphaItem
-Interface: IComplexAlphaItem An item grouping for a fixed year and a fixed origin city datas to generate a complex cone the slope for road and slope for each destination city (clock) using a terrestrial transport.
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / IComplexAlphaItem
+ Interface: IComplexAlphaItem An item grouping for a fixed year and a fixed origin city datas to generate a complex cone the slope for road and slope for each destination city (clock) using a terrestrial transport.
 Hierarchy  IComplexAlphaItem  Index Properties  coneAlpha tab  Properties coneAlpha • coneAlpha: number
 Defined in src/definitions/project.ts:81
 This property represents the slope of the road transport for the considered year.</description>
@@ -371,11 +383,12 @@ This property represents the slope of the road transport for the considered year
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icountrytextureurl/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icountrytextureurl/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ICountryTextureURL
-Interface: ICountryTextureURL Hierarchy  ICountryTextureURL  Index Properties  boundaries bumpMap map normalMap specularMap  Properties boundaries • boundaries: string
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ICountryTextureURL
+ Interface: ICountryTextureURL Hierarchy  ICountryTextureURL  Index Properties  boundaries bumpMap map normalMap specularMap  Properties boundaries • boundaries: string
 Defined in src/definitions/project.ts:15
  bumpMap • bumpMap: string
 Defined in src/definitions/project.ts:13
@@ -390,36 +403,38 @@ Defined in src/definitions/project.ts:12</description>
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icriterias/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.icriterias/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ICriterias
-Interface: ICriterias Hierarchy  ICriterias  Indexable  [ attribut: string]: IItemCriteria  </description>
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ICriterias
+ Interface: ICriterias Hierarchy  ICriterias  Indexable ▪ [attribut: string]: IItemCriteria</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.iedge/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.iedge/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › IEdge
-Interface: IEdge Here we find data of a graph edge in the IEdge
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / IEdge
+ Interface: IEdge Here we find data of a graph edge in the IEdge
 Each edge has
  a yearBegin and a yearEnd an origin idOri and destination idDes a transport mode transportMode  Hierarchy  IEdge  Index Properties  idDes idOri transportMode yearBegin yearEnd  Properties idDes • idDes: number
 Defined in src/definitions/project.ts:248
- Optional idOri • idOri? : number
-Defined in src/definitions/project.</description>
+ idOri • Optional idOri: number</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.iitemcriteria/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.iitemcriteria/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › IItemCriteria
-Interface: IItemCriteria Hierarchy  IItemCriteria  Index Properties  comparator value  Properties Optional comparator • comparator? : &amp;ldquo;=&amp;rdquo; | &amp;ldquo;&amp;gt;&amp;rdquo; | &amp;ldquo;&amp;gt;=&amp;rdquo; | &amp;ldquo;&amp;lt;&amp;rdquo; | &amp;ldquo;&amp;lt;=&amp;rdquo; | &amp;ldquo;!=&amp;rdquo;
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / IItemCriteria
+ Interface: IItemCriteria Hierarchy  IItemCriteria  Index Properties  comparator value  Properties comparator • Optional comparator: &amp;quot;=&amp;quot; | &amp;quot;&amp;gt;&amp;quot; | &amp;quot;&amp;gt;=&amp;quot; | &amp;quot;&amp;lt;&amp;quot; | &amp;quot;&amp;lt;=&amp;quot; | &amp;quot;!=&amp;quot;
 Defined in src/definitions/project.ts:155
  value • value: number | string | Date | boolean
 Defined in src/definitions/project.ts:154</description>
@@ -428,11 +443,12 @@ Defined in src/definitions/project.ts:154</description>
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilistfile/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilistfile/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › IListFile
-Interface: IListFile Hierarchy  IListFile  Index Properties  name text  Properties name • name: string
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / IListFile
+ Interface: IListFile Hierarchy  IListFile  Index Properties  name text  Properties name • name: string
 Defined in src/definitions/project.ts:341
  text • text: string
 Defined in src/definitions/project.ts:342</description>
@@ -441,34 +457,39 @@ Defined in src/definitions/project.ts:342</description>
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupcitygraph/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupcitygraph/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ILookupCityGraph
-Interface: ILookupCityGraph A ILookupCityGraph searches
- a cityCode and retrieves a piece of network [[ICityNetwork]] made of incident links of cityCode in the transport network  Hierarchy  ILookupCityGraph  Indexable  [ cityCode: string]: ICityGraph  A ILookupCityGraph searches
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ILookupCityGraph
+ Interface: ILookupCityGraph A ILookupCityGraph searches
+ a cityCode and retrieves a piece of network [[ICityNetwork]] made of incident links of cityCode in the transport network  Hierarchy  ILookupCityGraph  Indexable ▪ [cityCode: string]: ICityGraph
+A ILookupCityGraph searches
  a cityCode and retrieves a piece of network [[ICityNetwork]] made of incident links of cityCode in the transport network  </description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupcomplexalpha/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupcomplexalpha/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ILookupComplexAlpha
-Interface: ILookupComplexAlpha It&amp;rsquo;s a lookup mapping for a given year the slope angle between earth surface and cone slope as cone radius is determined, it&amp;rsquo;s the key parameter for cone geometries.
-This slope (alpha) is determined by Hierarchy  ILookupComplexAlpha  Indexable  [ year: string]: IComplexAlphaItem  It&amp;rsquo;s a lookup mapping for a given year the slope angle between earth surface and cone slope as cone radius is determined, it&amp;rsquo;s the key parameter for cone geometries.</description>
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ILookupComplexAlpha
+ Interface: ILookupComplexAlpha It&amp;rsquo;s a lookup mapping for a given year the slope angle between earth surface and cone slope as cone radius is determined, it&amp;rsquo;s the key parameter for cone geometries.
+This slope (alpha) is determined by Hierarchy  ILookupComplexAlpha  Indexable ▪ [year: string]: IComplexAlphaItem
+It&amp;rsquo;s a lookup mapping for a given year the slope angle between earth surface and cone slope as cone radius is determined, it&amp;rsquo;s the key parameter for cone geometries.</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupcurvelist/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupcurvelist/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ILookupCurveList
-Interface: ILookupCurveList Curve data associated to an edge from a given city
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ILookupCurveList
+ Interface: ILookupCurveList Curve data associated to an edge from a given city
 pointP and pointQ are control points for Bezier curves
 theta is the angle between cities
 Hierarchy  ILookupCurveList  Index Properties  end middle pointP pointQ speedRatio theta  Properties end • end: ICityExtremityOfEdge
@@ -481,24 +502,27 @@ Defined in src/definitions/project.ts:317
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupcurves/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupcurves/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ILookupCurves
-Interface: ILookupCurves A curve and its associated graph edge has a [[cityCodeBegin]]
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ILookupCurves
+ Interface: ILookupCurves A curve and its associated graph edge has a [[cityCodeBegin]]
 other parameters of this curve derive from the [[ILookupCurveItem]]
-Hierarchy  ILookupCurves  Indexable  [ cityCodeBegin: number]: ILookupCurvesFromCity  A curve and its associated graph edge has a [[cityCodeBegin]]
+Hierarchy  ILookupCurves  Indexable ▪ [cityCodeBegin: number]: ILookupCurvesFromCity
+A curve and its associated graph edge has a [[cityCodeBegin]]
 other parameters of this curve derive from the [[ILookupCurveItem]]</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupcurvesandcitygraph/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupcurvesandcitygraph/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ILookupCurvesAndCityGraph
-Interface: ILookupCurvesAndCityGraph ILookupCurvesAndCityGraph contains
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ILookupCurvesAndCityGraph
+ Interface: ILookupCurvesAndCityGraph ILookupCurvesAndCityGraph contains
  ILookupCityGraph network data (graph data) with modes and speed parameters curvesData curves data for geometric processes  (some duplication but the purposes are different)
 Hierarchy  ILookupCurvesAndCityGraph  Index Properties  curvesData lookupCityNetwork  Properties curvesData • curvesData: ILookupCurves
 Defined in src/definitions/project.ts:297
@@ -509,50 +533,55 @@ Defined in src/definitions/project.ts:296</description>
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupcurvesfromcity/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupcurvesfromcity/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ILookupCurvesFromCity
-Interface: ILookupCurvesFromCity Curves from a city
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ILookupCurvesFromCity
+ Interface: ILookupCurvesFromCity Curves from a city
 Hierarchy  ILookupCurvesFromCity  Index Properties  begin list  Properties begin • begin: ICityExtremityOfEdge
 Defined in src/definitions/project.ts:325
- list • list: object
-Defined in src/definitions/project.ts:326
-Type declaration:  [ cityCodeEnd: string]: ILookupCurveList  </description>
+ list • list: { [cityCodeEnd:string]: ILookupCurveList; }
+Defined in src/definitions/project.ts:326</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupdestwithmodes/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookupdestwithmodes/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ILookupDestWithModes
-Interface: ILookupDestWithModes a table of destination [[cityCode]] and the associated transport modes and their respective speed
-Hierarchy  ILookupDestWithModes  Indexable  [ cityCode: string]: ILookupTranspModeSpeed  a table of destination [[cityCode]] and the associated transport modes and their respective speed</description>
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ILookupDestWithModes
+ Interface: ILookupDestWithModes a table of destination [[cityCode]] and the associated transport modes and their respective speed
+Hierarchy  ILookupDestWithModes  Indexable ▪ [cityCode: string]: ILookupTranspModeSpeed
+a table of destination [[cityCode]] and the associated transport modes and their respective speed</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookuptranspmodespeed/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ilookuptranspmodespeed/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ILookupTranspModeSpeed
-Interface: ILookupTranspModeSpeed A transport mode has a given speed for a given year
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ILookupTranspModeSpeed
+ Interface: ILookupTranspModeSpeed A transport mode has a given speed for a given year
 Table of couples year-speed for each transport mode
-Hierarchy  ILookupTranspModeSpeed  Indexable  [ transpModeCode: string]: Array‹object›  A transport mode has a given speed for a given year
+Hierarchy  ILookupTranspModeSpeed  Indexable ▪ [transpModeCode: string]: Array&amp;lt;{ speed: number ; year: number }&amp;gt;
+A transport mode has a given speed for a given year
 Table of couples year-speed for each transport mode</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.imarklimits/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.imarklimits/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › IMarkLimits
-Interface: IMarkLimits Hierarchy  IMarkLimits  Index Properties  begin end  Properties begin • begin: number
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / IMarkLimits
+ Interface: IMarkLimits Hierarchy  IMarkLimits  Index Properties  begin end  Properties begin • begin: number
 Defined in src/definitions/project.ts:337
  end • end: number
 Defined in src/definitions/project.ts:338</description>
@@ -561,11 +590,12 @@ Defined in src/definitions/project.ts:338</description>
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.inedlocalglsl/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.inedlocalglsl/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › INEDLocalGLSL
-Interface: INEDLocalGLSL Hierarchy  INEDLocalGLSL  Index Properties  ned2ECEF0 ned2ECEF1 ned2ECEF2 summit  Properties ned2ECEF0 • ned2ECEF0: number[]
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / INEDLocalGLSL
+ Interface: INEDLocalGLSL Hierarchy  INEDLocalGLSL  Index Properties  ned2ECEF0 ned2ECEF1 ned2ECEF2 summit  Properties ned2ECEF0 • ned2ECEF0: number[]
 Defined in src/definitions/project.ts:58
  ned2ECEF1 • ned2ECEF1: number[]
 Defined in src/definitions/project.ts:59
@@ -578,11 +608,12 @@ Defined in src/definitions/project.ts:61</description>
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.iorderascendant/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.iorderascendant/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › IOrderAscendant
-Interface: IOrderAscendant Hierarchy  IOrderAscendant  Index Properties  ascendant attribute  Properties ascendant • ascendant: boolean
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / IOrderAscendant
+ Interface: IOrderAscendant Hierarchy  IOrderAscendant  Index Properties  ascendant attribute  Properties ascendant • ascendant: boolean
 Defined in src/definitions/project.ts:164
  attribute • attribute: string
 Defined in src/definitions/project.ts:163</description>
@@ -591,48 +622,51 @@ Defined in src/definitions/project.ts:163</description>
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ipopulation/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ipopulation/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › IPopulation
-Interface: IPopulation Hierarchy  IPopulation  Index Properties  cityCode  Properties Optional cityCode • cityCode? : number
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / IPopulation
+ Interface: IPopulation Hierarchy  IPopulation  Index Properties  cityCode  Properties cityCode • Optional cityCode: number
 Defined in src/definitions/project.ts:179</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ipseudogeometry/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.ipseudogeometry/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › IPseudoGeometry
-Interface: IPseudoGeometry Hierarchy  IPseudoGeometry  Index Properties  index uv vertices  Properties index • index: ArrayBuffer
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / IPseudoGeometry
+ Interface: IPseudoGeometry Hierarchy  IPseudoGeometry  Index Properties  index uv vertices  Properties index • index: ArrayBuffer
 Defined in src/definitions/project.ts:262
  uv • uv: ArrayBuffer
 Defined in src/definitions/project.ts:261
- vertices • vertices: object
-Defined in src/definitions/project.ts:263
-Type declaration:  [ projectionName: string]: ArrayBuffer  </description>
+ vertices • vertices: { [projectionName:string]: ArrayBuffer; }
+Defined in src/definitions/project.ts:263</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.isumupcriteria/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.isumupcriteria/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ISumUpCriteria
-Interface: ISumUpCriteria Hierarchy  ISumUpCriteria  Indexable  [ attribut: string]: ISumUpCriteriaItem  </description>
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ISumUpCriteria
+ Interface: ISumUpCriteria Hierarchy  ISumUpCriteria  Indexable ▪ [attribut: string]: ISumUpCriteriaItem</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.isumupcriteriaitem/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.isumupcriteriaitem/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ISumUpCriteriaItem
-Interface: ISumUpCriteriaItem Hierarchy  ISumUpCriteriaItem  Index Properties  sumUp type  Properties Optional sumUp • sumUp? : object | string[] | ISumUpCriteria
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ISumUpCriteriaItem
+ Interface: ISumUpCriteriaItem Hierarchy  ISumUpCriteriaItem  Index Properties  sumUp type  Properties sumUp • Optional sumUp: { max: Date | number ; min: Date | number } | string[] | ISumUpCriteria
 Defined in src/definitions/project.ts:171
  type • type: sumUpType
 Defined in src/definitions/project.ts:170</description>
@@ -641,28 +675,29 @@ Defined in src/definitions/project.ts:170</description>
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.itranspmode/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.itranspmode/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ITranspMode
-Interface: ITranspMode A transport mode has
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ITranspMode
+ Interface: ITranspMode A transport mode has
  a name, a code, a yearBegin, a yearEnd, can be terrestrial or not, and has a table of speeds that may change over years  Hierarchy  ITranspMode  Index Properties  code name speeds terrestrial yearBegin yearEnd  Properties code • code: number
 Defined in src/definitions/project.ts:227
- name • name: string
-Defined in src/definitions/project.ts:226</description>
+ name • name: string</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.itransportmodespeed/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/interfaces/_src_definitions_project_.itransportmodespeed/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo; › ITransportModeSpeed
-Interface: ITransportModeSpeed The speedKPH of a given transport mode may be different depending on year
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo; / ITransportModeSpeed
+ Interface: ITransportModeSpeed The speedKPH of a given transport mode may be different depending on year
 Hierarchy  ITransportModeSpeed  Index Properties  speedKPH transportModeCode year  Properties speedKPH • speedKPH: number
 Defined in src/definitions/project.ts:213
- Optional transportModeCode • transportModeCode? : number
+ transportModeCode • Optional transportModeCode: number
 Defined in src/definitions/project.ts:212
  year • year: number
 Defined in src/definitions/project.ts:211</description>
@@ -671,239 +706,249 @@ Defined in src/definitions/project.ts:211</description>
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_bigboard_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_bigboard_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/bigBoard/bigBoard&amp;rdquo;
-Module: &amp;ldquo;src/bigBoard/bigBoard&amp;rdquo; Index Classes  BigBoard  </description>
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/bigBoard/bigBoard&amp;rdquo;
+ Module: &amp;ldquo;src/bigBoard/bigBoard&amp;rdquo; Index Classes  BigBoard  </description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_datasetmanager_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_datasetmanager_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/bigBoard/datasetManager&amp;rdquo;
-Module: &amp;ldquo;src/bigBoard/datasetManager&amp;rdquo; Index Classes  dataSetManager  </description>
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/bigBoard/datasetManager&amp;rdquo;
+ Module: &amp;ldquo;src/bigBoard/datasetManager&amp;rdquo; Index Classes  DataSetManager  </description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_guidat_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_guidat_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/bigBoard/guiDAT&amp;rdquo;
-Module: &amp;ldquo;src/bigBoard/guiDAT&amp;rdquo; Index Classes  GUI  Variables  _filesData aerialControllersList aerialFolder annees coneFolder countryControllersList countryFolder flagTransportDone generalFolder terresterialFolder terrestrialControllersList  Object literals  conf  Variables Let _filesData • _filesData: IListFile[] = []
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/bigBoard/guiDAT&amp;rdquo;
+ Module: &amp;ldquo;src/bigBoard/guiDAT&amp;rdquo; Index Classes  GUI  Variables  _filesData aerialControllersList aerialFolder annees coneFolder countryControllersList countryFolder flagTransportDone generalFolder terresterialFolder terrestrialControllersList  Object literals  conf  Variables _filesData • Let _filesData: IListFile[] = []
 Defined in src/bigBoard/guiDAT.ts:11
- Const aerialControllersList • aerialControllersList: GUI[] = []
+ aerialControllersList • Const aerialControllersList: GUI[] = []
 Defined in src/bigBoard/guiDAT.ts:13
- Let aerialFolder • aerialFolder: GUI
+ aerialFolder • Let aerialFolder: GUI
 Defined in src/bigBoard/guiDAT.ts:20
- Let annees • annees: GUIController
-Defined in src/bigBoard/guiDAT.</description>
+ annees • Let annees: GUIController</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_initthree_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_initthree_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/bigBoard/initThree&amp;rdquo;
-Module: &amp;ldquo;src/bigBoard/initThree&amp;rdquo; Index Variables  longLat2XY semiHeight  Functions  loadBoundaries prepareConfiguration  Variables Const longLat2XY • longLat2XY: number = semiHeight / 90
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/bigBoard/initThree&amp;rdquo;
+ Module: &amp;ldquo;src/bigBoard/initThree&amp;rdquo; Index Variables  longLat2XY semiHeight  Functions  loadBoundaries prepareConfiguration  Variables longLat2XY • Const longLat2XY: number = semiHeight / 90
 Defined in src/bigBoard/initThree.ts:67
- Const semiHeight • semiHeight: 1024 = 1024
+ semiHeight • Const semiHeight: 1024 = 1024
 Defined in src/bigBoard/initThree.ts:66
-Functions loadBoundaries ▸ loadBoundaries(url: string): Promise‹HTMLCanvasElement›
+Functions loadBoundaries ▸ loadBoundaries(url: string): Promise&amp;lt;HTMLCanvasElement&amp;gt;
 Defined in src/bigBoard/initThree.ts:68
-Parameters:
-   Name Type     url string    Returns: Promise‹HTMLCanvasElement›
- prepareConfiguration ▸ prepareConfiguration(): Promise‹void›</description>
+Parameters:    Name Type     url string    Returns: Promise&amp;lt;HTMLCanvasElement&amp;gt;</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_bigboard_merger_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/bigBoard/merger&amp;rdquo;
-Module: &amp;ldquo;src/bigBoard/merger&amp;rdquo; Index Classes  Merger  Variables  _maxYear _minYear keyWords thetaLimit  Functions  getCSV getModelledSpeed getTheMiddle merger networkFromCities  Object literals  _transportName config  Variables Let _maxYear • _maxYear: number = 1900
-Defined in src/bigBoard/merger.ts:127
- Let _minYear • _minYear: number = 2000
-Defined in src/bigBoard/merger.ts:126
- Const keyWords • keyWords: Array‹object› = [ {name: &amp;lsquo;_cities&amp;rsquo;, words: [&amp;lsquo;cityCode&amp;rsquo;, &amp;lsquo;latitude&amp;rsquo;, &amp;lsquo;longitude&amp;rsquo;, &amp;lsquo;radius&amp;rsquo;]}, {name: &amp;lsquo;_transportModeSpeed&amp;rsquo;, words: [&amp;lsquo;transportModeCode&amp;rsquo;, &amp;lsquo;year&amp;rsquo;, &amp;lsquo;speedKPH&amp;rsquo;]}, {name: &amp;lsquo;_transportModeCode&amp;rsquo;, words: [&amp;lsquo;code&amp;rsquo;, &amp;lsquo;name&amp;rsquo;, &amp;lsquo;yearBegin&amp;rsquo;, &amp;lsquo;terrestrial&amp;rsquo;]}, {name: &amp;lsquo;_transportNetwork&amp;rsquo;, words: [&amp;lsquo;transportMode&amp;rsquo;, &amp;lsquo;idDes&amp;rsquo;, &amp;lsquo;idOri&amp;rsquo;]}, {name: &amp;lsquo;_populations&amp;rsquo;, words: [&amp;lsquo;cityCode&amp;rsquo;]}, ]</description>
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/bigBoard/merger&amp;rdquo;
+ Module: &amp;ldquo;src/bigBoard/merger&amp;rdquo; Index Classes  Merger  Variables  _maxYear _minYear keyWords thetaLimit  Functions  getCSV getModelledSpeed getTheMiddle merger networkFromCities  Object literals  _transportName config  Variables _maxYear • Let _maxYear: number = 1900
+Defined in src/bigBoard/merger.ts:131
+ _minYear • Let _minYear: number = 2000
+Defined in src/bigBoard/merger.ts:130
+ keyWords • Const keyWords: Array&amp;lt;{ name: string ; words: string[] }&amp;gt; = [ { name: &amp;lsquo;_cities&amp;rsquo;, words: [&amp;lsquo;cityCode&amp;rsquo;, &amp;lsquo;latitude&amp;rsquo;, &amp;lsquo;longitude&amp;rsquo;, &amp;lsquo;radius&amp;rsquo;] }, { name: &amp;lsquo;_transportModeSpeed&amp;rsquo;, words: [&amp;lsquo;transportModeCode&amp;rsquo;, &amp;lsquo;year&amp;rsquo;, &amp;lsquo;speedKPH&amp;rsquo;] }, { name: &amp;lsquo;_transportModeCode&amp;rsquo;, words: [&amp;lsquo;code&amp;rsquo;, &amp;lsquo;name&amp;rsquo;, &amp;lsquo;yearBegin&amp;rsquo;, &amp;lsquo;terrestrial&amp;rsquo;] }, { name: &amp;lsquo;_transportNetwork&amp;rsquo;, words: [&amp;lsquo;transportMode&amp;rsquo;, &amp;lsquo;idDes&amp;rsquo;, &amp;lsquo;idOri&amp;rsquo;] }, { name: &amp;lsquo;_populations&amp;rsquo;, words: [&amp;lsquo;cityCode&amp;rsquo;] },]</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_common_configuration_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_common_configuration_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/common/configuration&amp;rdquo;
-Module: &amp;ldquo;src/common/configuration&amp;rdquo; Index Interfaces  IEventListItem  Variables  _BASIC_CONE_MATERIAL _BASIC_LINE_MATERIAL _BASIC_TEXT_MATERIAL _COUNTRY_MATERIAL _OVER_PI _OVER_TWO_PI _SIZE_TEXT _TEXT_GEOMETRY_OPTIONS _THREE_EARTH_RADIUS _TWEEN_TIMING _TWO_PI _coneStep _deg2rad _earthRadiusMeters _extrudedHeight _hatHeight _heightRatio _highLitedMaterial _intrudedHeightRatio _pointsPerCurve _projectionEnd _projectionInit _projectionPercent _rad2deg _referenceEquiRectangularFloat32Array _standardParallel1 _standardParallel2 _year  Functions  fireEvents  Object literals  CONFIGURATION _listeners _referenceEquiRectangular  Variables Let _BASIC_CONE_MATERIAL • _BASIC_CONE_MATERIAL: Material
-Defined in src/common/configuration.ts:43
- Let _BASIC_LINE_MATERIAL • _BASIC_LINE_MATERIAL: LineBasicMaterial</description>
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/common/configuration&amp;rdquo;
+ Module: &amp;ldquo;src/common/configuration&amp;rdquo; Index Interfaces  IEventListItem  Variables  _BASIC_CONE_MATERIAL _BASIC_LINE_MATERIAL _BASIC_TEXT_MATERIAL _COUNTRY_MATERIAL _OVER_PI _OVER_TWO_PI _SIZE_TEXT _TEXT_GEOMETRY_OPTIONS _THREE_EARTH_RADIUS _TWEEN_TIMING _TWO_PI _coneStep _deg2rad _earthRadiusMeters _extrudedHeight _hatHeight _heightRatio _highLitedMaterial _intrudedHeightRatio _pointsPerCurve _projectionEnd _projectionInit _projectionPercent _rad2deg _referenceEquiRectangularFloat32Array _standardParallel1 _standardParallel2 _year  Functions  fireEvents  Object literals  CONFIGURATION _listeners _referenceEquiRectangular  Variables _BASIC_CONE_MATERIAL • Let _BASIC_CONE_MATERIAL: Material
+Defined in src/common/configuration.ts:44
+ _BASIC_LINE_MATERIAL • Let _BASIC_LINE_MATERIAL: LineBasicMaterial</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_common_gpucomputer_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_common_gpucomputer_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/common/gpuComputer&amp;rdquo;
-Module: &amp;ldquo;src/common/gpuComputer&amp;rdquo; Index Classes  GPUComputer OffscreenCanvas  Variables  vertexCode  Functions  generateTextureOptions  Variables Const vertexCode • vertexCode: string = &amp;lsquo;#version 300 es\n&amp;rsquo; + &amp;lsquo;in vec2 position;\n&amp;rsquo; + &amp;lsquo;in vec2 texture;\n&amp;rsquo; + &amp;lsquo;out vec2 pos;\n&amp;rsquo; + &amp;lsquo;void main(void) {\n&amp;rsquo; + &#39; pos = texture;\n&amp;rsquo; + &#39; gl_Position = vec4(position.xy, 0.0, 1.0);\n&amp;rsquo; + &amp;lsquo;}\n&amp;rsquo;
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/common/gpuComputer&amp;rdquo;
+ Module: &amp;ldquo;src/common/gpuComputer&amp;rdquo; Index Classes  GPUComputer OffscreenCanvas  Variables  vertexCode  Functions  generateTextureOptions  Variables vertexCode • Const vertexCode: string = &amp;lsquo;#version 300 es\n&amp;rsquo; + &amp;lsquo;in vec2 position;\n&amp;rsquo; + &amp;lsquo;in vec2 texture;\n&amp;rsquo; + &amp;lsquo;out vec2 pos;\n&amp;rsquo; + &amp;lsquo;void main(void) {\n&amp;rsquo; + &#39; pos = texture;\n&#39; + &#39; gl_Position = vec4(position.xy, 0.0, 1.0);\n&#39; + &amp;lsquo;}\n&amp;rsquo;
 Defined in src/common/gpuComputer.ts:26
-Functions generateTextureOptions ▸ generateTextureOptions(gl: WebGL2RenderingContext, texturesType: object): object</description>
+Functions generateTextureOptions ▸ generateTextureOptions(gl: WebGL2RenderingContext, texturesType: { [x:string]: internalFormatType; }): object</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_common_referential_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_common_referential_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/common/referential&amp;rdquo;
-Module: &amp;ldquo;src/common/referential&amp;rdquo; Index Classes  Coordinate NEDLocal  Variables  scrapCoordinate scrapCoordinate2  Functions  Cartographic2ECEF ECEF2Cartographic  Variables Const scrapCoordinate • scrapCoordinate: Coordinate‹› = new Coordinate()
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/common/referential&amp;rdquo;
+ Module: &amp;ldquo;src/common/referential&amp;rdquo; Index Classes  Coordinate NEDLocal  Variables  scrapCoordinate scrapCoordinate2  Functions  Cartographic2ECEF ECEF2Cartographic  Variables scrapCoordinate • Const scrapCoordinate: Coordinate = new Coordinate()
 Defined in src/common/referential.ts:111
- Const scrapCoordinate2 • scrapCoordinate2: Coordinate‹› = new Coordinate()
+ scrapCoordinate2 • Const scrapCoordinate2: Coordinate = new Coordinate()
 Defined in src/common/referential.ts:112
 Functions Cartographic2ECEF ▸ Cartographic2ECEF(pos: Cartographic): Coordinate
 Defined in src/common/referential.ts:5
-Parameters:
-   Name Type     pos Cartographic    Returns: Coordinate</description>
+Parameters:    Name Type     pos Cartographic    Returns: Coordinate</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_common_utils_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_common_utils_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/common/utils&amp;rdquo;
-Module: &amp;ldquo;src/common/utils&amp;rdquo; Index Classes  Cartographic  Variables  ZERO_CARTOGRAPHIC chars iso8601RegExp link r rnd  Functions  DragnDrop compare compareItemCriteria generateUUID getLocalLimits getObjectByString interpolator matchingBBox orderCriteria reviver save searchCriterias updateSumUpCriteria updateSumupCriteriaByDateOrNumber  Variables Const ZERO_CARTOGRAPHIC • ZERO_CARTOGRAPHIC: Cartographic‹› = new Cartographic()
-Defined in src/common/utils.ts:120
- Const chars • chars: string[] = &amp;lsquo;0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz&amp;rsquo;.split(&#39;&#39;)
-Defined in src/common/utils.ts:569
- Const iso8601RegExp • iso8601RegExp: RegExp‹› = /(\d{4}-[01]\d-[0-3]\dT0-2{2}\d.\d+([+-][0-2]\d:[0-5]\d|Z))|(\d{4}-[01]\d-[0-3]\dT0-2{2}\d([+-][0-2]\d:[0-5]\d|Z))|(\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z))/</description>
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/common/utils&amp;rdquo;
+ Module: &amp;ldquo;src/common/utils&amp;rdquo; Index Classes  Cartographic  Variables  ZERO_CARTOGRAPHIC chars iso8601RegExp link r rnd  Functions  DragnDrop compare compareItemCriteria generateUUID getLocalLimits getObjectByString interpolator matchingBBox orderCriteria reviver save searchCriterias updateSumUpCriteria updateSumupCriteriaByDateOrNumber  Variables ZERO_CARTOGRAPHIC • Const ZERO_CARTOGRAPHIC: Cartographic = new Cartographic()
+Defined in src/common/utils.ts:124
+ chars • Const chars: string[] = &amp;lsquo;0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz&amp;rsquo;.split(&#39;&#39;)
+Defined in src/common/utils.ts:585
+ iso8601RegExp • Const iso8601RegExp: RegExp = /(\d{4}-[01]\d-[0-3]\dT0-2{2}\d.</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_cone_base_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_cone_base_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/cone/base&amp;rdquo;
-Module: &amp;ldquo;src/cone/base&amp;rdquo; Index Classes  PseudoCone  </description>
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/cone/base&amp;rdquo;
+ Module: &amp;ldquo;src/cone/base&amp;rdquo; Index Classes  PseudoCone  </description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_cone_coneboard_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_cone_coneboard_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/cone/coneBoard&amp;rdquo;
-Module: &amp;ldquo;src/cone/coneBoard&amp;rdquo; Index Classes  ConeBoard  Variables  forbiddenAttributes  Variables Const forbiddenAttributes • forbiddenAttributes: string[] = [&amp;lsquo;referential&amp;rsquo;, &amp;lsquo;position&amp;rsquo;]
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/cone/coneBoard&amp;rdquo;
+ Module: &amp;ldquo;src/cone/coneBoard&amp;rdquo; Index Classes  ConeBoard  Variables  forbiddenAttributes  Variables forbiddenAttributes • Const forbiddenAttributes: string[] = [&amp;lsquo;referential&amp;rsquo;, &amp;lsquo;position&amp;rsquo;]
 Defined in src/cone/coneBoard.ts:10</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_cone_conemeshshader_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_cone_conemeshshader_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/cone/coneMeshShader&amp;rdquo;
-Module: &amp;ldquo;src/cone/coneMeshShader&amp;rdquo; Index Classes  ConeMeshShader  Interfaces  IShaderAlpha  Variables  _alphas _cityCodeOrder _clocks _cones _dirtyLimits _discriminant _gpgpu _height _indexesArr _localLimitsLookup _ready _tickCount _width forbiddenAttributes uuid  Functions  computation fullCleanArrays localLimitsFunction localLimitsRaw regenerateFromConeStep updateAlphas updateWithLimits  Variables Let _alphas • _alphas: IShaderAlpha
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/cone/coneMeshShader&amp;rdquo;
+ Module: &amp;ldquo;src/cone/coneMeshShader&amp;rdquo; Index Classes  ConeMeshShader  Interfaces  IShaderAlpha  Variables  _alphas _cityCodeOrder _clocks _cones _dirtyLimits _discriminant _gpgpu _height _indexesArr _localLimitsLookup _ready _tickCount _width forbiddenAttributes uuid  Functions  computation fullCleanArrays localLimitsFunction localLimitsRaw regenerateFromConeStep updateAlphas updateWithLimits  Variables _alphas • Let _alphas: IShaderAlpha
 Defined in src/cone/coneMeshShader.ts:44
- Let _cityCodeOrder • _cityCodeOrder: string[]
+ _cityCodeOrder • Let _cityCodeOrder: string[]
 Defined in src/cone/coneMeshShader.ts:29
- Let _clocks • _clocks: Float32Array
-Defined in src/cone/coneMeshShader.</description>
+ _clocks • Let _clocks: Float32Array</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_cone_curvemeshshader_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_cone_curvemeshshader_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/cone/curveMeshShader&amp;rdquo;
-Module: &amp;ldquo;src/cone/curveMeshShader&amp;rdquo; Index Classes  CurveMeshShader  Variables  _coefficient _curves _gpgpu _hauteurs _height _ready _t _width curvesDontDisplay uuid  Functions  computation fullCleanArrays getHeight regenerateStep updateYear  Variables Let _coefficient • _coefficient: number = 1
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/cone/curveMeshShader&amp;rdquo;
+ Module: &amp;ldquo;src/cone/curveMeshShader&amp;rdquo; Index Classes  CurveMeshShader  Variables  _coefficient _curves _gpgpu _hauteurs _height _ready _t _width curvesDontDisplay uuid  Functions  computation fullCleanArrays getHeight regenerateStep updateYear  Variables _coefficient • Let _coefficient: number = 1
 Defined in src/cone/curveMeshShader.ts:17
- Let _curves • _curves: CurveMeshShader[]
+ _curves • Let _curves: CurveMeshShader[]
 Defined in src/cone/curveMeshShader.ts:8
- Const _gpgpu • _gpgpu: object
+ _gpgpu • Const _gpgpu: object
 Defined in src/cone/curveMeshShader.ts:19
-Type declaration:  [ x: string]: GPUComputer   Let _hauteurs • _hauteurs: Float32Array</description>
+ _hauteurs • Let _hauteurs: Float32Array</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_country_countryboard_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_country_countryboard_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/country/countryBoard&amp;rdquo;
-Module: &amp;ldquo;src/country/countryBoard&amp;rdquo; Index Classes  CountryBoard  </description>
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/country/countryBoard&amp;rdquo;
+ Module: &amp;ldquo;src/country/countryBoard&amp;rdquo; Index Classes  CountryBoard  </description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_country_countrymeshshader_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_country_countrymeshshader_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/country/countryMeshShader&amp;rdquo;
-Module: &amp;ldquo;src/country/countryMeshShader&amp;rdquo; Index Classes  CountryMeshShader  Interfaces  IPreGeometry IPreMesh  Variables  _countries _dirty _gpgpu _height _ready _tickCount _vertexArrayEntries _width uuid  Functions  cleanBoundaries cnPnPolyIsIn computation fullCleanArrays generateSteinerPointsFor generateVertices maxRectangle uniqueOccurenceCounter  Variables Let _countries • _countries: CountryMeshShader[]
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/country/countryMeshShader&amp;rdquo;
+ Module: &amp;ldquo;src/country/countryMeshShader&amp;rdquo; Index Classes  CountryMeshShader  Interfaces  IPreGeometry IPreMesh  Variables  _countries _dirty _gpgpu _height _ready _tickCount _vertexArrayEntries _width uuid  Functions  cleanBoundaries cnPnPolyIsIn computation fullCleanArrays generateSteinerPointsFor generateVertices maxRectangle uniqueOccurenceCounter  Variables _countries • Let _countries: CountryMeshShader[]
 Defined in src/country/countryMeshShader.ts:30
- Let _dirty • _dirty: boolean = false
+ _dirty • Let _dirty: boolean = false
 Defined in src/country/countryMeshShader.ts:32
- Const _gpgpu • _gpgpu: object
-Defined in src/country/countryMeshShader.ts:38</description>
+ _gpgpu • Const _gpgpu: object</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_definitions_project_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_definitions_project_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/definitions/project&amp;rdquo;
-Module: &amp;ldquo;src/definitions/project&amp;rdquo; Index Enumerations  PROJECTION_ENUM  Interfaces  IBBox ICartographic ICity ICityExtremityOfEdge ICityGraph IComplexAlphaItem ICountryTextureURL ICriterias IEdge IItemCriteria IListFile ILookupCityGraph ILookupComplexAlpha ILookupCurveList ILookupCurves ILookupCurvesAndCityGraph ILookupCurvesFromCity ILookupDestWithModes ILookupTranspModeSpeed IMarkLimits INEDLocalGLSL IOrderAscendant IPopulation IPseudoGeometry ISumUpCriteria ISumUpCriteriaItem ITranspMode ITransportModeSpeed  Type aliases  IMergerState ShaderTypes configurationCallback configurationObservableEvt internalFormatType sumUpType  Type aliases IMergerState Ƭ IMergerState: &amp;ldquo;missing&amp;rdquo; | &amp;ldquo;ready&amp;rdquo; | &amp;ldquo;pending&amp;rdquo; | &amp;ldquo;complete&amp;rdquo;
-Defined in src/definitions/project.ts:266
- ShaderTypes Ƭ ShaderTypes: &amp;ldquo;fragment&amp;rdquo; | &amp;ldquo;vertex&amp;rdquo;</description>
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/definitions/project&amp;rdquo;
+ Module: &amp;ldquo;src/definitions/project&amp;rdquo; Index Enumerations  PROJECTION_ENUM  Interfaces  IBBox ICartographic ICity ICityExtremityOfEdge ICityGraph IComplexAlphaItem ICountryTextureURL ICriterias IEdge IItemCriteria IListFile ILookupCityGraph ILookupComplexAlpha ILookupCurveList ILookupCurves ILookupCurvesAndCityGraph ILookupCurvesFromCity ILookupDestWithModes ILookupTranspModeSpeed IMarkLimits INEDLocalGLSL IOrderAscendant IPopulation IPseudoGeometry ISumUpCriteria ISumUpCriteriaItem ITranspMode ITransportModeSpeed  Type aliases  IMergerState ShaderTypes configurationCallback configurationObservableEvt internalFormatType sumUpType  Type aliases IMergerState Ƭ IMergerState: &amp;quot;missing&amp;quot; | &amp;quot;ready&amp;quot; | &amp;quot;pending&amp;quot; | &amp;quot;complete&amp;quot;
+Defined in src/definitions/project.</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_shaders_/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/modules/_src_shaders_/</guid>
-      <description>shriveling the world documentation › &amp;ldquo;src/shaders&amp;rdquo;
-Module: &amp;ldquo;src/shaders&amp;rdquo; Index Variables  shaderList  Functions  getShader  Variables Const shaderList • shaderList: object | string = &amp;ldquo;SHADERS_HERE&amp;rdquo;
+      <description>shriveling the world documentation
+ Globals / &amp;ldquo;src/shaders&amp;rdquo;
+ Module: &amp;ldquo;src/shaders&amp;rdquo; Index Variables  shaderList  Functions  getShader  Variables shaderList • Const shaderList: { [name:string]: { [typo:string]: string; }; } | string = &amp;ldquo;__SHADERS_HERE__&amp;rdquo;
 Defined in src/shaders.ts:4
 Functions getShader ▸ getShader(name: string, typo: ShaderTypes): string
 Defined in src/shaders.ts:5
-Parameters:
-   Name Type     name string   typo ShaderTypes    Returns: string</description>
+Parameters:    Name Type     name string   typo ShaderTypes    Returns: string</description>
     </item>
     
     <item>
       <title>documentation</title>
       <link>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/readme/</link>
-      <pubDate>Wed, 14 Oct 2020 12:20:57 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 17:37:13 +0000</pubDate>
       
       <guid>https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/readme/</guid>
       <description>shriveling the world documentation
-shriveling the world documentation Index Modules  &amp;ldquo;src/bigBoard/bigBoard&amp;rdquo; &amp;ldquo;src/bigBoard/datasetManager&amp;rdquo; &amp;ldquo;src/bigBoard/guiDAT&amp;rdquo; &amp;ldquo;src/bigBoard/initThree&amp;rdquo; &amp;ldquo;src/bigBoard/merger&amp;rdquo; &amp;ldquo;src/common/configuration&amp;rdquo; &amp;ldquo;src/common/gpuComputer&amp;rdquo; &amp;ldquo;src/common/referential&amp;rdquo; &amp;ldquo;src/common/utils&amp;rdquo; &amp;ldquo;src/cone/base&amp;rdquo; &amp;ldquo;src/cone/coneBoard&amp;rdquo; &amp;ldquo;src/cone/coneMeshShader&amp;rdquo; &amp;ldquo;src/cone/curveMeshShader&amp;rdquo; &amp;ldquo;src/country/countryBoard&amp;rdquo; &amp;ldquo;src/country/countryMeshShader&amp;rdquo; &amp;ldquo;src/definitions/project&amp;rdquo; &amp;ldquo;src/shaders&amp;rdquo;  </description>
+ Globals
+ shriveling the world documentation Index Modules  &amp;ldquo;src/bigBoard/bigBoard&amp;rdquo; &amp;ldquo;src/bigBoard/datasetManager&amp;rdquo; &amp;ldquo;src/bigBoard/guiDAT&amp;rdquo; &amp;ldquo;src/bigBoard/initThree&amp;rdquo; &amp;ldquo;src/bigBoard/merger&amp;rdquo; &amp;ldquo;src/common/configuration&amp;rdquo; &amp;ldquo;src/common/gpuComputer&amp;rdquo; &amp;ldquo;src/common/referential&amp;rdquo; &amp;ldquo;src/common/utils&amp;rdquo; &amp;ldquo;src/cone/base&amp;rdquo; &amp;ldquo;src/cone/coneBoard&amp;rdquo; &amp;ldquo;src/cone/coneMeshShader&amp;rdquo; &amp;ldquo;src/cone/curveMeshShader&amp;rdquo; &amp;ldquo;src/country/countryBoard&amp;rdquo; &amp;ldquo;src/country/countryMeshShader&amp;rdquo; &amp;ldquo;src/definitions/project&amp;rdquo; &amp;ldquo;src/shaders&amp;rdquo;  </description>
     </item>
     
   </channel>
