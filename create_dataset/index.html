@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Shriveling world</title>
+<meta name="generator" content="Hugo 0.76.5" />
+<link href="https://theworldisnotflat.github.io/shriveling_world_documentation//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://theworldisnotflat.github.io/shriveling_world_documentation/create_dataset/">
+<link rel="stylesheet" href="https://theworldisnotflat.github.io/shriveling_world_documentation/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://theworldisnotflat.github.io/shriveling_world_documentation/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script src="https://theworldisnotflat.github.io/shriveling_world_documentation/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="" />
+<meta property="og:description" content="#Instructions for the creation of a dataset ##Data model According to the data model, Shriveling world datasets are composed of five files:
+ cities populations transport modes transport mode speed network  The files describe a graph modelling a transport network between cities with speed as a key parameter. ##A differential model The Shriveling world model is by design differential, id est, it compares the basic terrestrial road speed with the fastest available transport speed." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://theworldisnotflat.github.io/shriveling_world_documentation/create_dataset/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="#Instructions for the creation of a dataset ##Data model According to the data model, Shriveling world datasets are composed of five files:
+ cities populations transport modes transport mode speed network  The files describe a graph modelling a transport network between cities with speed as a key parameter. ##A differential model The Shriveling world model is by design differential, id est, it compares the basic terrestrial road speed with the fastest available transport speed."/>
+<meta itemprop="name" content="">
+<meta itemprop="description" content="#Instructions for the creation of a dataset ##Data model According to the data model, Shriveling world datasets are composed of five files:
+ cities populations transport modes transport mode speed network  The files describe a graph modelling a transport network between cities with speed as a key parameter. ##A differential model The Shriveling world model is by design differential, id est, it compares the basic terrestrial road speed with the fastest available transport speed.">
+
+<meta itemprop="wordCount" content="411">
+
+
+
+<meta itemprop="keywords" content="" />
+</head>
+<body><div class="container"><header>
+<h1>Shriveling world</h1>
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/shriveling_world_documentation/">User documentation</a></li>
+<li><a href="/shriveling_world_documentation/documentation">Developper documentation</a></li>
+<li><a href="/shriveling_world_documentation/app">Application</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1></h1>
+<p>#Instructions for the creation of a dataset
+##Data model
+<img src="https://github.com/theworldisnotflat/shriveling_world/blob/master/model/modeles7.png" alt="data model">
+According to the data model, <em>Shriveling world</em> datasets are composed of five files:</p>
+<ol>
+<li>cities</li>
+<li>populations</li>
+<li>transport modes</li>
+<li>transport mode speed</li>
+<li>network</li>
+</ol>
+<p>The files describe a <strong>graph</strong> modelling a transport network between cities with <strong>speed</strong> as a key parameter.
+##A differential model
+The <em>Shriveling world</em> model is by design <strong>differential</strong>, id est, it compares  the basic terrestrial road speed with the fastest available transport speed. This comparison of speed computes a ratio that will determine the slope of cones. Addressing the issue of the historical contraction of time-space due to the improvement of transport means, the  <em>Shriveling world</em> model allows for considering different periods in time, years, different moments when the ratio is computed. The ratio is fixed for a given year.
+##Historical time span
+The dataset will generate a <em>historical time span</em> during which, for each year, a graphical representation may be built. This <em>historical time span</em> considers the dates attached to the modes and network links but also the coexistece of road and other transport modes. This coexistence of transport modes is necessary to generate the cones slope, <a href="#a-differential-model">as seen earlier</a>. Hence the <em>historical time span</em> is based on data provided about the year of opening and sometimes ending (e.g. supersonic aircraft) of the transport services, an on the period where <strong>road speed and another faster transport mode speed</strong> are known.
+The <em>historical time span</em> needs to fill in the variable <em>yearBegin</em> and the variable <em>yearEnd</em></p>
+<ul>
+<li><em>yearBegin</em> will be the earliest year when the model can be computed</li>
+<li><em>yearEnd</em> will be the latest year when the model can be computed</li>
+</ul>
+<p>There are two sources to determine this <em>historical time span</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>transport mode speed.csv</em></td>
+<td>to allow for comparing modes in general, e.g. road vs rail in the long term</td>
+</tr>
+<tr>
+<td><em>transport network.csv</em></td>
+<td>to allow for considering the growth of a transport network of a given speed, over time, e.g. the morphogenesis of the high-speed rail network</td>
+</tr>
+</tbody>
+</table>
+<p>Algorithm for determining the variables <em>yearBegin</em> and  <em>yearEnd</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Source file</th>
+<th>Starting year for each mode</th>
+<th>Ending year for each mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>transport mode speed.csv</em></td>
+<td><em>yearBeginRoadMode</em> = min(<em>year</em>(road)), <em>yearBeginFasterTransp1Mode</em> = min(<em>year</em>(Transp1)), <em>yearBeginFasterTransp2Mode</em> = min(<em>year</em>(Transp2)), etc.</td>
+<td><em>yearEndRoadMode</em>= max(<em>year</em>(road)), <em>yearEndFasterTransp1Mode</em> = max(<em>year</em>(Transp1)), <em>yearEndFasterTransp2Mode</em> = max(<em>year</em>(Transp2)), etc.</td>
+</tr>
+<tr>
+<td><em>transport network.csv</em></td>
+<td><em>yearBeginRoadNetwork</em>, <em>yearBeginFasterTransp1Network</em>, <em>yearBeginFasterTransp2Network</em>, etc.</td>
+<td><em>yearEndRoadNetwork</em>, <em>yearEndFasterTransp1Network</em>, <em>yearEndFasterTransp2Network</em>, etc.</td>
+</tr>
+</tbody>
+</table>
+<p><em>yearBeginRoad</em> = min (<em>yearBeginRoadMode</em>, <em>yearBeginRoadNetwork</em>)
+<em>yearBeginFasterTransp1</em> = min (<em>yearBeginFasterTransp1Mode</em>, <em>yearBeginFasterTransp1Network</em>)
+<em>yearBeginFasterTransp2</em> = min (<em>yearBeginFasterTransp2Mode</em>, <em>yearBeginFasterTransp2Network</em>)
+etc.</p>
+<p><em>yearEndRoad</em> = max (<em>yearEndRoadMode</em>, <em>yearEndRoadNetwork</em>)</p>
+<p><em>yearBegin</em> = max((<em>yearBeginRoad</em>), min(<em>yearBeginFasterTransp1</em>, <em>yearBeginFasterTransp2</em>, etc.))
+<em>yearEnd</em> = min((<em>yearEndRoad</em>), max(<em>yearEndFasterTransp1</em>, <em>yearEndFasterTransp2</em>, etc.))</p>
+<div class="edit-meta">
+
+<br></div><nav class="pagination"><a class="nav nav-next" href="https://theworldisnotflat.github.io/shriveling_world_documentation/documentation/" title="Documentations">Next - Documentations <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main>
+<div class="sidebar">
+
+<div class="sidebar-footer"></div>
+</div>
+
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>
